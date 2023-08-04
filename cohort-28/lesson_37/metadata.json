@@ -1,0 +1,13 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/Album.java",
+		"code/src/AlbumImpl.java",
+		"code/src/Photo.java",
+		"code/src/AlbumTest.java",
+		"code/src/homeworks/DateOperation.java",
+		"code/src/homeworks/DateOperationTest.java"
+	]
+}

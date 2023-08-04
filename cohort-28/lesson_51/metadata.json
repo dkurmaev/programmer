@@ -1,0 +1,11 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/movie/dao/MoviesCollection.java",
+		"code/movie/dao/MoviesCollectionImpl.java",
+		"code/movie/model/Movie.java"
+
+	]
+}

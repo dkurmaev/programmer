@@ -1,0 +1,12 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/CompanySetImpl.java",
+		"code/src/SetAppl.java",
+		"code/src/HashSetAppl.java",
+		"code/src/Person.java",
+		"code/src/PersonAppl.java"
+	]
+}

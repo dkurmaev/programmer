@@ -1,0 +1,10 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/homework-10/src/MainReverseArray.java",
+    "code/array-sorting/src/Main.java",
+    "code/array-sorting/src/Main1.java"
+  ]
+}

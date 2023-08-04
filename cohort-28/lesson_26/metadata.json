@@ -1,0 +1,12 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/practice/ArraySum.java",
+		"code/practice/ArraySumTest.java",
+		"code/practice/ArraySumElements.java",
+		"code/practice/ArraySumElementsTest.java",
+		"code/practice/WeekDays.java"
+	]
+}

@@ -1,0 +1,9 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/if-else/src/Main.java",
+    "code/switch-case/src/Main.java"
+  ]
+}
