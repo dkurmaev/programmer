@@ -57,7 +57,6 @@ public class Main {
         VipVisitor vipVisitor1 = new VipVisitor("Джон", 50);
 
 
-
         // ищем свободного консультанта из нужного отдела
         ConsultResult consultResult = administrator.getFreeConsultant(electronicDepartment).consult(visitor1);
 

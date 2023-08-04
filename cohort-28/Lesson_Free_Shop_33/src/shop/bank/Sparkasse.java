@@ -1,8 +1,8 @@
 package shop.bank;
 
-public class VTB extends AbstractBank {
+public class Sparkasse extends AbstractBank {
 
-    public VTB(String name, String creditDescription) {
+    public Sparkasse(String name, String creditDescription) {
         super(name, creditDescription);
     }
 
