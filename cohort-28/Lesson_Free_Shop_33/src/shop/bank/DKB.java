@@ -14,11 +14,10 @@ public class DKB extends AbstractBank {
 
     @Override
     public void giveCredit() {
-        // доработанная реализация
+        System.out.println("Банк " + getName() + " предоставляет кредит по программе: " + getCreditDescription());
     }
 
 
-    // сбербанк умеет также рассматривать срочные заявки с помощью перегруженного метода
     public void checkInfo(boolean critical){
 
     }

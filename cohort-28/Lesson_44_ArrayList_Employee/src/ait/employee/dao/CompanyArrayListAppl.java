@@ -11,7 +11,6 @@ public class CompanyArrayListAppl implements Company {
 
 	public int capacity;
 
-	@Override
 	public boolean addEmployee(Employee employee) {
 		if (employees.size() < capacity) {
 			employees.add(employee);
@@ -22,7 +21,6 @@ public class CompanyArrayListAppl implements Company {
 
 	}
 
-	@Override
 	public Employee removeEmployee(int id) {
 		Employee victim = findEmployee(id);
 		if (victim != null) {
@@ -32,7 +30,6 @@ public class CompanyArrayListAppl implements Company {
 		return null;
 	}
 
-	@Override
 	public Employee findEmployee(int id) {
 		for (Employee employee : employees) {
 			if (employee.getId() == id) {
@@ -42,17 +39,14 @@ public class CompanyArrayListAppl implements Company {
 		return null;
 	}
 
-	@Override
 	public int size() {
 		return employees.size();
 
 	}
-	@Override
 	public int quantity() {
 		return employees.size();
 	}
 
-	@Override
 	public double totalSalary() {
 		double totalSalary = 0;
 		for (Employee employee : employees) {
@@ -62,7 +56,6 @@ public class CompanyArrayListAppl implements Company {
 	}
 
 
-	@Override
 	public double averageSalary() {
 		if (employees.size() > 0) {
 			return totalSalary() / employees.size();
@@ -71,7 +64,6 @@ public class CompanyArrayListAppl implements Company {
 
 	}
 
-	@Override
 	public double totalSales() {
 		return 0;
 	}
@@ -88,7 +80,6 @@ public class CompanyArrayListAppl implements Company {
 //		return 0;
 //	}
 
-	@Override
 	public void printEmployees() {
 		for (Employee employee : employees) {
 			System.out.println(employee);
@@ -96,12 +87,10 @@ public class CompanyArrayListAppl implements Company {
 
 	}
 
-	@Override
 	public Employee[] findEmployeesHoursGreateThan(int hours) {
 		return new Employee[0];
 	}
 
-	@Override
 	public Employee[] findEmployeesHoursGreaterThan(int hours) {
 		int count = 0;
 		for (Employee employee : employees) {
@@ -120,7 +109,6 @@ public class CompanyArrayListAppl implements Company {
 
 	}
 
-	@Override
 	public Employee[] findEmployeesSalaryRange(int minSalary, int maxSalary) {
 		int count = 0;
 		for (Employee employee : employees) {
@@ -137,7 +125,6 @@ public class CompanyArrayListAppl implements Company {
 		}
 		return result;
 	}
-	@Override
 	public Employee[] findEmployeesSalaryBetween(double min, double max) {
 		Predicate<Employee> predicate = new Predicate<>() {
 			public boolean test(Employee t) {

@@ -43,7 +43,7 @@ public class Main {
         electronicDepartment.addEmployee(consultant2);
 
         // создаем товары для отделов
-        Computer computer = new Computer(200, true, "Zenbook", "Asus", 2048);
+        Computer computer = new Computer(200, true, "Zen book", "Asus", 2048);
         Televisor televisor = new Televisor(1000, false, "SmartTV", "Samsung");
         GameConsole xbox = new GameConsole("XBOX", 1024);
 

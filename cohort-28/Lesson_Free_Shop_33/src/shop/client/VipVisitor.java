@@ -21,11 +21,17 @@ public class VipVisitor extends AbstractVisitor {
         if (!checkDiscount()) {
             super.buy(goods);
         }else{
-            // купить со скидкой
+            applyDiscount(goods); // Применяем скидку к товару
         }
     }
 
     private boolean checkDiscount(){
         return discount>0;
+    }
+    private void applyDiscount(GoodsInterface goods) {
+        double discount = 0.1; // 10% скидка
+        double discountedPrice = goods.getPrice() * (1 - discount);
+        System.out.println("Вы купили " + goods.getName() + " со скидкой " + (discount * 100) + "%.");
+        System.out.println("Цена без скидки: " + goods.getPrice() + ", Цена со скидкой: " + discountedPrice);
     }
 }

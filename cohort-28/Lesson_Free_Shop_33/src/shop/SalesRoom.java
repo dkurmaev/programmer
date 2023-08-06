@@ -9,9 +9,9 @@ public class SalesRoom {
 
     public static final String SHOP_NAME = "technodom";
 
-    private ArrayList<DepartmentInterface> departmentList = new ArrayList<DepartmentInterface>();// в каждом департаменте имеются свои сотрудники
+    private ArrayList<DepartmentInterface> departmentList = new ArrayList<>();// в каждом департаменте имеются свои сотрудники
 
-    private ArrayList<VisitorInterface> visitorList = new ArrayList<VisitorInterface>();
+    private ArrayList<VisitorInterface> visitorList = new ArrayList<>();
 
     public ArrayList<DepartmentInterface> getDepartmentList() {
         return departmentList;

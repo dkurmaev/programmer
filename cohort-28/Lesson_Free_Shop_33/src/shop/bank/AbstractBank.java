@@ -7,13 +7,13 @@ public abstract class AbstractBank implements BankInterface {
     // количество заявок по всем банкам (можно также реализовать через коллекцию)
     public static int requestCount;
 
-    public AbstractBank(String name, String creditDescription) {
-        this.name = name;
-    }
-
     private String name;
     private String creditDescription;
 
+    public AbstractBank(String name, String creditDescription) {
+        this.name = name;
+        this.creditDescription = creditDescription;
+    }
 
     @Override
     public void checkInfo() {
@@ -21,7 +21,9 @@ public abstract class AbstractBank implements BankInterface {
     }
 
     @Override
-    public void giveCredit() {}
+    public void giveCredit() {
+        // Реализуйте метод giveCredit(), специфичный для каждого банка.
+    }
 
     @Override
     public String getName() {

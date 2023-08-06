@@ -13,8 +13,9 @@ public class Sparkasse extends AbstractBank {
 
     @Override
     public void giveCredit() {
-        // доработанная реализация
+        System.out.println("Банк " + getName() + " выдает кредит согласно условиям: " + getCreditDescription());
     }
+
 
 
 }
