@@ -35,7 +35,7 @@ public class CompanyStreamImpl implements Company {
                 .findFirst()
                 .orElse(null);
     }
-    // O(1)
+    // O(n)
     @Override
     public int quantity() {
         return employees.size();
@@ -67,6 +67,7 @@ public class CompanyStreamImpl implements Company {
                 .filter(employee -> employee.getHours() >= hours)
                 .toArray(Employee[]::new);
     }
+
     // O(n)
     @Override
     public Employee[] findEmployeesSalaryRange(int min, int max) {
@@ -75,4 +76,10 @@ public class CompanyStreamImpl implements Company {
                 .filter(predicate)
                 .toArray(Employee[]::new);
     }
+    private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
+        return employees.stream()
+                .filter(predicate)
+                .toArray(Employee[]::new);
+    }
+
 }
