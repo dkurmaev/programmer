@@ -55,14 +55,18 @@ public class PomergranateAppl {
     }
 
     private static List<String> findBoxesWithMaximumSeeds(List<Box> boxes, int maxSeeds) {
-        return boxes.stream()
-                .filter(box -> box.pomergranates.stream()
-                        .mapToInt(Pomergranate::getNumSeeds)
-                        .max()
-                        .orElse(0) == maxSeeds)
-                        .map(Box::getName)
-                        .collect(Collectors.toList());
+        List<String> boxesWithMaxSeeds = new ArrayList<>();
+        for (Box box : boxes) {
+            int numSeedsInBox = box.pomergranates.stream()
+                    .mapToInt(Pomergranate::getNumSeeds)
+                    .max()
+                    .orElse(0);
 
-
+            if (numSeedsInBox == maxSeeds) {
+                boxesWithMaxSeeds.add(box.getName());
+            }
+        }
+        return boxesWithMaxSeeds;
     }
+
 }

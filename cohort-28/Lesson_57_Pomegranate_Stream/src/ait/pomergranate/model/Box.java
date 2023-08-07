@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Box implements Iterable<Pomergranate> {
-    private static String name;
+    private String name;
     public List<Pomergranate> pomergranates;
 
     public Box(String name, int numPomergranates) {
