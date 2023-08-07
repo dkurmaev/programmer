@@ -1,25 +1,22 @@
 package ait.pomergranate.model;
 
-import ait.pomergranate.model.Pomergranate;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Box implements Iterable<Pomergranate> {
-    private String name;
-    private List<Pomergranate> pomergranates;
+    private static String name;
+    public List<Pomergranate> pomergranates;
 
     public Box(String name, int numPomergranates) {
         this.name = name;
-        pomergranates = new ArrayList<>();
-        Random random = new Random();
+        pomergranates = Stream.generate(() -> new Pomergranate(new Random().nextInt(301)+400))
+                .limit(numPomergranates)
+                .collect(Collectors.toList());
 
-        for (int i = 0; i < numPomergranates; i++) {
-            int numSeeds = random.nextInt(301) + 400; // Random quantity of seeds (range from 400 to 700)
-            pomergranates.add(new Pomergranate(numSeeds));
-        }
     }
 
     @Override
@@ -30,4 +27,5 @@ public class Box implements Iterable<Pomergranate> {
     public String getName() {
         return name;
     }
+
 }

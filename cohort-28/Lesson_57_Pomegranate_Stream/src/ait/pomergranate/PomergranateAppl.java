@@ -1,11 +1,13 @@
+package ait.pomergranate;
+
 import ait.pomergranate.model.Box;
 import ait.pomergranate.model.Pomergranate;
 import ait.pomergranate.model.Seed;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class PomergranateAppl {
     public static void main(String[] args) {
@@ -27,7 +29,6 @@ public class PomergranateAppl {
     private static List<Box> generateRandomBoxes() {
         List<Box> boxes = new ArrayList<>();
         Random random = new Random();
-
         int numBoxes = random.nextInt(101) + 100; // Random quantity of Boxes (range from 100 to 200)
         for (int i = 0; i < numBoxes; i++) {
             int numPomergranates = random.nextInt(11) + 10; // Random quantity of pomegranates (range from 10 to 20)
@@ -39,45 +40,29 @@ public class PomergranateAppl {
     }
 
     private static int calculateTotalSeeds(List<Box> boxes) {
-        int totalSeeds = 0;
-        for (Box box : boxes) {
-            for (Pomergranate pomergranate : box) {
-                for (Seed seed : pomergranate) {
-                    totalSeeds++;
-                }
-            }
-        }
-        return totalSeeds;
+        return boxes.stream()
+                .flatMap(box -> box.pomergranates.stream())
+                .mapToInt(Pomergranate::getNumSeeds)
+                .sum();
     }
 
     private static int calculateMaximumSeeds(List<Box> boxes) {
-        int maxSeeds = 0;
-        for (Box box : boxes) {
-            for (Pomergranate pomegranate : box) {
-                int numSeeds = 0;
-                for (Seed seed : pomegranate) {
-                    numSeeds++;
-                }
-                maxSeeds = Math.max(maxSeeds, numSeeds);
-            }
-        }
-        return maxSeeds;
+        return boxes.stream()
+                .flatMap(box -> box.pomergranates.stream())
+                .mapToInt(Pomergranate::getNumSeeds)
+                .max()
+                .orElse(0);
     }
 
     private static List<String> findBoxesWithMaximumSeeds(List<Box> boxes, int maxSeeds) {
-        List<String> boxesWithMaxSeeds = new ArrayList<>();
-        for (Box box : boxes) {
-            for (Pomergranate pomergranate : box) {
-                int numSeeds = 0;
-                for (Seed seed : pomergranate) {
-                    numSeeds++;
-                }
-                if (numSeeds == maxSeeds) {
-                    boxesWithMaxSeeds.add(box.getName());
-                    break;
-                }
-            }
-        }
-        return boxesWithMaxSeeds;
+        return boxes.stream()
+                .filter(box -> box.pomergranates.stream()
+                        .mapToInt(Pomergranate::getNumSeeds)
+                        .max()
+                        .orElse(0) == maxSeeds)
+                        .map(Box::getName)
+                        .collect(Collectors.toList());
+
+
     }
 }
