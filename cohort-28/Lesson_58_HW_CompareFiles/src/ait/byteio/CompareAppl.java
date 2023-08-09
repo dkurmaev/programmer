@@ -1,50 +1,40 @@
 package ait.byteio;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Arrays;
 
 public class CompareAppl {
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.out.println("Usage: java FileComparator <file1> <file2> <file3>");
+            System.out.println("Wrong number of arguments");
             return;
         }
-        String file1Path = args[0];
-        String file2Path = args[1];
-
-
-        try {
-            if (areFilesEqual(file1Path, file2Path)) {
-                System.out.println("Files are the same.");
-            } else {
-                System.out.println("Files are different.");
-            }
-        } catch (IOException e) {
-            System.out.println("An error occurred: " + e.getMessage());
-        }
-    }
-
-    public static boolean areFilesEqual(String path1, String path2) throws IOException {
-        try (FileInputStream fis1 = new FileInputStream(path1);
-             FileInputStream fis2 = new FileInputStream(path2)) {
-
-            byte[] buffer1 = new byte[4096];
-            byte[] buffer2 = new byte[4096];
-
-            int bytesRead1;
-            int bytesRead2;
-
+        System.out.println("file1 = " + args[0]);
+        System.out.println("file2 = " + args[1]);
+        try (FileInputStream fi1 = new FileInputStream(new File(args[0]));
+             FileInputStream fi2 = new FileInputStream(args[1])) {
+            int byte1 = 0;
+            int byte2 = 0;
             do {
-                bytesRead1 = fis1.read(buffer1);
-                bytesRead2 = fis2.read(buffer2);
-
-                if (bytesRead1 != bytesRead2 || !Arrays.equals(buffer1, buffer2)) {
-                    return false;
+                byte1 = fi1.read();
+                byte2 = fi2.read();
+                if (byte1 != byte2) {
+                    break;
                 }
-            } while (bytesRead1 != -1);
+            } while (byte1 != -1 && byte2 != -1);
 
-            return true;
+            if (byte1 == byte2) {
+                System.out.println("Files are the same");
+            } else {
+                System.out.println("Files are the different");
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Wrong file name");
+        } catch (IOException e) {
+            System.out.println("Wrong reading data");
         }
+
     }
 }
