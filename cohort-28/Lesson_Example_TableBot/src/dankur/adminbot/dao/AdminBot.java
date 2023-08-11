@@ -4,8 +4,11 @@ import dankur.adminbot.model.Person;
 import dankur.adminbot.model.Table;
 
 import java.util.Date;
+import java.util.List;
 
 public interface AdminBot {
+    List<Table> getTables();
+
     void reserveTable(Table table, Person customer, Date startTime, Date endTime);
     void cancelReservation(int reservationId);
     void addTable(Table table);

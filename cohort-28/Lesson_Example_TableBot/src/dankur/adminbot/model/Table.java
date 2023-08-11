@@ -1,9 +1,9 @@
 package dankur.adminbot.model;
 
 public class Table {
-    private int tableNumber;
-    private boolean reserved;
-    private Reservation reservation;
+    private int tableNumber;      // Номер стола
+    private boolean reserved;     // Зарезервирован ли стол
+    private Reservation reservation; // Информация о брони
 
     public Table(int tableNumber) {
         this.tableNumber = tableNumber;
