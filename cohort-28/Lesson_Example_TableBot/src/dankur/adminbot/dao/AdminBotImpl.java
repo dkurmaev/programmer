@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 public class AdminBotImpl implements AdminBot {
-    private List<Table> tables;
+    public List<Table> tables;
     public AdminBotImpl(List<Table> tables) {
         this.tables = tables;
     }
@@ -15,8 +15,7 @@ public class AdminBotImpl implements AdminBot {
         Reservation reservation = new Reservation(generateReservationId(), customer, startTime, endTime);
         table.setReserved(true);
         table.setReservation(reservation);
-       // System.out.println("Table " + table.getTableNumber() + " reserved for " + customer.getFullName() +
-               // " from " + formatTime(startTime) + " to " + formatTime(endTime));
+        System.out.println("Reservation for Table " + table.getTableNumber() + " created.");
     }
     @Override
     public void cancelReservation(int reservationId) {
@@ -51,8 +50,12 @@ public class AdminBotImpl implements AdminBot {
     private int generateReservationId() {
         return (int) (Math.random() * 1000);
     }
-    private String formatTime(Date date) {
+    public String formatTime(Date date) {
         SimpleDateFormat sdf = new SimpleDateFormat("hh:mm");
         return sdf.format(date);
+    }
+
+    public List<Table> getTables() {
+        return tables;
     }
 }

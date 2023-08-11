@@ -1,16 +1,16 @@
 package dankur.adminbot.model;
 
 public class Table {
-    private String tableNumber;
+    private int tableNumber;
     private boolean reserved;
     private Reservation reservation;
-    public Table(String tableNumber) {
+    public Table(int tableNumber) {
         this.tableNumber = tableNumber;
     }
-    public String getTableNumber() {
+    public int getTableNumber() {
         return tableNumber;
     }
-    public void setTableNumber(String tableNumber) {
+    public void setTableNumber(int tableNumber) {
         this.tableNumber = tableNumber;
     }
     public boolean isReserved() {
