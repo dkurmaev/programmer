@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4cb5f61a-21fc-471d-97f6-47032a4e8e0d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/test/AdminBotApplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Praxis" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/Praxis.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/RWTHUniversity/ArrayFrom1To100.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/RWTHUniversity/Arrays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/RWTHUniversity/mehrereArrays.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/FindDuplicate.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/FindDuplicateRandom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/FindDuplicateWithBinarySearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/FindDuplicateWithHashSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/FindDuplicateWithoutXOR.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/out/production/Praxis/danil/praxis/list/NumbersProcessor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/src/danil/RWTHUniversity/ArrayFrom1To100.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/src/danil/RWTHUniversity/Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../cohort-28/Praxis/src/danil/RWTHUniversity/mehrereArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/Lesson_Example_TableBot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/Lesson_Example_TableBot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/AdminBotAppl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/AdminBotAppl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/dao/AdminBotImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/dao/AdminBotImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/model/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/model/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/model/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../cohort-28/Lesson_Example_TableBot/src/dankur/adminbot/model/Table.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Tmr7r3qJVRPQtUJKgGMxASnpGB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4cb5f61a-21fc-471d-97f6-47032a4e8e0d" name="Changes" comment="" />
+      <created>1691658935025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1691658935025</updated>
+      <workItem from="1691658936434" duration="3876000" />
+      <workItem from="1691741038049" duration="591000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

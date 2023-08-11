@@ -10,32 +10,12 @@ public class AdminBotImpl implements AdminBot {
     public AdminBotImpl(List<Table> tables) {
         this.tables = tables;
     }
+
     @Override
-    public void reserveTable(Table table, Person customer, Date startTime, Date endTime) {
-        Reservation reservation = new Reservation(generateReservationId(), customer, startTime, endTime);
-        table.setReserved(true);
-        table.setReservation(reservation);
-        System.out.println("Reservation for Table " + table.getTableNumber() + " created.");
-    }
-    @Override
-    public void cancelReservation(int reservationId) {
-        for (Table table : tables) {
-            Reservation reservation = table.getReservation();
-            if (reservation != null && reservation.getReservationId() == reservationId) {
-                table.setReserved(false);
-                table.setReservation(null);
-                System.out.println("Reservation with ID " + reservationId + " canceled for Table " + table.getTableNumber());
-                return;
-            }
-        }
-        System.out.println("Reservation with ID " + reservationId + " not found.");
-    }
-    @Override
-    public boolean addTable(Table table) {
+    public void addTable(Table table) {
         if (!tables.contains(table)) {
-            return tables.add(table);
+            tables.add(table);
         }
-        return false;
     }
     @Override
     public void removeTable(Table table) {
@@ -58,4 +38,26 @@ public class AdminBotImpl implements AdminBot {
     public List<Table> getTables() {
         return tables;
     }
+    @Override
+    public void reserveTable(Table table, Person customer, Date startTime, Date endTime) {
+        Reservation reservation = new Reservation(generateReservationId(), customer, startTime, endTime);
+        table.setReserved(true);
+        table.setReservation(reservation);
+        System.out.println("Reservation for Table " + table.getTableNumber() + " created.");
+    }
+    @Override
+    public void cancelReservation(int reservationId) {
+        for (Table table : tables) {
+            Reservation reservation = table.getReservation();
+            if (reservation != null && reservation.getReservationId() == reservationId) {
+                table.setReserved(false);
+                table.setReservation(null);
+                System.out.println("Reservation with ID " + reservationId + " canceled for Table " + table.getTableNumber());
+                return;
+            }
+        }
+        System.out.println("Reservation with ID " + reservationId + " not found.");
+    }
+
+
 }

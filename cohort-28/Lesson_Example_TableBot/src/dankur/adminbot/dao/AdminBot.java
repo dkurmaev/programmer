@@ -8,6 +8,6 @@ import java.util.Date;
 public interface AdminBot {
     void reserveTable(Table table, Person customer, Date startTime, Date endTime);
     void cancelReservation(int reservationId);
-    boolean addTable(Table table);
+    void addTable(Table table);
     void removeTable(Table table);
 }

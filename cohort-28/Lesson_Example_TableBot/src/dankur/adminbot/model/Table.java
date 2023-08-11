@@ -4,6 +4,7 @@ public class Table {
     private int tableNumber;
     private boolean reserved;
     private Reservation reservation;
+
     public Table(int tableNumber) {
         this.tableNumber = tableNumber;
     }

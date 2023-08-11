@@ -3,6 +3,7 @@ package dankur.adminbot.test;
 import dankur.adminbot.dao.AdminBotImpl;
 import dankur.adminbot.model.Person;
 import dankur.adminbot.model.Table;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +23,7 @@ public class AdminBotApplTest {
 
     @BeforeEach
     void setUp() {
-        adminBot = new AdminBotImpl(new ArrayList<>()); // Создаем экземпляр AdminBotImpl
+        adminBot = new AdminBotImpl(new ArrayList<>());
         table = new Table(3);
         adminBot.addTable(table);
         customer = new Person("Danil", "Kurmayev", "0987654321");
@@ -36,15 +37,32 @@ public class AdminBotApplTest {
         adminBot.addTable(table);
 
         List<Table> tables = adminBot.getTables();
-        assertTrue(tables.contains(table));
+        assertTrue(tables.contains(table));    }
+
+    @Test
+    public void testRemoveTable() {
+        Table table = new Table(1);
+        adminBot.addTable(table);
+
+        Person customer = new Person("John", "Doe", "0987654321");
+        Date startTime = new Date();
+        Date endTime = new Date(startTime.getTime() + 3600000);
+
+        adminBot.reserveTable(table, customer, startTime, endTime);
+
+        adminBot.removeTable(table);
+
+        assertFalse(table.isReserved());
+        assertNull(table.getReservation());
     }
+
     @Test
     public void testReserveTable() {
         Table table = new Table(4);
         adminBot.addTable(table);
-        Person customer = new Person("Danil", "Kurmayev", "0987654321");
-        Date startTime = new Date();
-        Date endTime = new Date(startTime.getTime() + 3600000);
+        customer = new Person("Danil", "Kurmayev", "0987654321");
+        startTime = new Date();
+        endTime = new Date(startTime.getTime() + 3600000);
         adminBot.reserveTable(table, customer, startTime, endTime);
         assertTrue(table.isReserved());
         assertNotNull(table.getReservation());
