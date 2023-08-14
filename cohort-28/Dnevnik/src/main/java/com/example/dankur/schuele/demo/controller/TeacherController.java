@@ -1,8 +1,8 @@
-package dankur.schuele.demo.controller;
+package com.example.dankur.schuele.demo.controller;
 
 
-import dankur.schuele.demo.model.Teacher;
-import dankur.schuele.demo.service.TeacherService;
+import com.example.dankur.schuele.demo.model.Teacher;
+import com.example.dankur.schuele.demo.service.TeacherService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

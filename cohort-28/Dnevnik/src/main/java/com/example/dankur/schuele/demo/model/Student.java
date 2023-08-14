@@ -1,4 +1,4 @@
-package dankur.schuele.demo.model;
+package com.example.dankur.schuele.demo.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -6,17 +6,18 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 
+
 @Entity
-public class Teacher {
+public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
-    private String subject;
+    private String grade;
 
-    // Геттеры и сеттеры
+
 
     public Long getId() {
         return id;
@@ -34,11 +35,11 @@ public class Teacher {
         this.name = name;
     }
 
-    public String getSubject() {
-        return subject;
+    public String getGrade() {
+        return grade;
     }
 
-    public void setSubject(String subject) {
-        this.subject = subject;
+    public void setGrade(String grade) {
+        this.grade = grade;
     }
 }

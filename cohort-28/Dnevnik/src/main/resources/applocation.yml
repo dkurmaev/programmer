@@ -1,0 +1,17 @@
+# Настройка подключения к БД
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dnevnik
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# Настройка Hibernate для автоматической генерации таблиц и обновления схемы
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+main:
+  banner - mode: off
+  jpa:
+    show-sql: true

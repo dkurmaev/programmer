@@ -1,7 +1,7 @@
-package dankur.schuele.demo.service;
+package com.example.dankur.schuele.demo.service;
 
 
-import dankur.schuele.demo.model.Teacher;
+import com.example.dankur.schuele.demo.model.Teacher;
 
 public interface TeacherService {
     Teacher createTeacher(Teacher teacher);
