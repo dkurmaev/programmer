@@ -1,10 +1,9 @@
 package ait.parser.impl;
 
-
-
-import Constants;
+import ait.Constants;
 import ait.etity.SubCategory;
 import ait.parser.Parser;
+
 
 /**
  * Парсер для преобразования строк в объекты типа SubCategory.
@@ -21,15 +20,21 @@ public class SubCategoryParser implements Parser<SubCategory> {
     @Override
     public SubCategory parse(String line) {
         String[] split = line.split(Constants.CSV_DELIMITER, -1);
-        return new SubCategory(
-                Long.valueOf(split[0]),
-                split[1]);
 
-        //todo валидация: является ли строка числом числом, размер массива
-        //todo написать builder
-        // SubCategory.builder()
-        //      .id(Long.valueOf(split[0]))
-        //      .name(split[1])
-        //      .build();
+        // Валидация: Проверка, является ли строка числом и размер массива
+        if (split.length != 2) {
+            throw new ArrayIndexOutOfBoundsException("Unexpected number of elements in CSV line");
+        }
+        try {
+            long id = Long.parseLong(split[0]);
+        } catch (NumberFormatException e) {
+            throw new NumberFormatException("Invalid format for ID: " + split[0]);
+        }
+
+        // Используем builder для создания объекта SubCategory
+        return SubCategory.Builder
+                .id(1L)
+                .name("Example SubCategory")
+                .build();
     }
 }

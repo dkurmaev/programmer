@@ -3,7 +3,7 @@ package ait.parser.impl;
 
 
 import ait.Constants;
-import db.model.EntityReference;
+import ait.db.model.EntityReference;
 import ait.parser.Parser;
 
 /**

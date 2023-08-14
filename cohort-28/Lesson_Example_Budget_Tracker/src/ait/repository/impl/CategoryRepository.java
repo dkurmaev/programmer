@@ -3,12 +3,11 @@ package ait.repository.impl;
 
 
 import ait.Constants;
-import ait.db.model.EntityReference;
 import ait.etity.Category;
 import ait.etity.EntityEnum;
 import ait.etity.SubCategory;
 import ait.parser.Parser;
-import ait.parser.impl.EntityReferenceParser;
+import ait.parser.impl.CategoryParser;
 import ait.repository.Repository;
 
 import java.io.File;

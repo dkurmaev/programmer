@@ -1,7 +1,5 @@
 package ait.etity;
 
-
-
 import java.util.Objects;
 
 /**
@@ -12,10 +10,8 @@ public final class SubCategory implements ID {
     private Long id;
     private String name;
 
-    public SubCategory() {
-    }
-
-    public SubCategory(Long id, String name) {
+    // Приватный конструктор для использования только через внутренний Builder
+    private SubCategory(Long id, String name) {
         this.id = id;
         this.name = name;
     }
@@ -57,5 +53,25 @@ public final class SubCategory implements ID {
         return "SubCategory[" +
                 "id=" + id + ", " +
                 "name=" + name + ']';
+    }
+
+    // Вложенный статический класс Builder
+    public static class Builder {
+        private Long id;
+        private String name;
+
+        public Builder id(Long id) {
+            this.id = id;
+            return this;
+        }
+
+        public Builder name(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public SubCategory build() {
+            return new SubCategory(id, name);
+        }
     }
 }

@@ -34,7 +34,7 @@ public abstract class Repository<E extends ID> {
      *
      * @return Следующий доступный идентификатор сущности.
      */
-    protected Long getNextId() {
+    public Long getNextId() {
         IdService idService = new IdService();
         return idService.generateNextId(EntityEnum.SUB_CATEGORY);
     }

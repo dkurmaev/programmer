@@ -2,7 +2,7 @@ package ait.etity;
 
 import java.nio.file.Path;
 
-import static org.example.Constants.*;
+import static ait.Constants.*;
 
 /**
  * Перечисление, представляющее типы сущностей и их пути к файлам.
