@@ -6,11 +6,23 @@ import ait.employee.model.SalesManager;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.Predicate;
+
+/*
+В этом примере writeLock используется для методов, выполняющих операции записи, а readLock используется для методов,
+выполняющих операции только для чтения. Это позволяет нескольким потокам выполнять чтение одновременно, но блокирует
+доступ на запись во время чтения и записи.
+ */
 
 public class CompanyStreamImpl implements Company {
     private final Lock locker = new ReentrantLock();
+    private final ReadWriteLock rwLock = new ReentrantReadWriteLock();
+    private final Lock readLock = rwLock.readLock();
+    private final Lock writeLock = rwLock.writeLock();
+
     private final Set<Employee> employees;
     private int capacity;
 
@@ -24,74 +36,74 @@ public class CompanyStreamImpl implements Company {
         if (employee == null) {
             return false;
         }
-        locker.lock();
+        writeLock.lock();
         try {
             if (employees.size() == capacity) {
                 return false;
             }
             return employees.add(employee);
         } finally {
-            locker.unlock();
+            writeLock.unlock();
         }
     }
 
     @Override
     public Employee removeEmployee(int id) {
-        locker.lock();
+        writeLock.lock();
         try {
             Employee victim = findEmployee(id);
             employees.remove(victim);
             return victim;
         } finally {
-            locker.unlock();
+            writeLock.unlock();
         }
     }
 
     @Override
     public Employee findEmployee(int id) {
-        locker.lock();
+        readLock.lock();
         try {
             return employees.stream()
                     .filter(employee -> employee.getId() == id)
                     .findFirst()
                     .orElse(null);
         } finally {
-            locker.unlock();
+            readLock.unlock();
         }
     }
 
     @Override
     public int quantity() {
-        locker.lock();
+        readLock.lock();
         try {
             return employees.size();
         } finally {
-            locker.unlock();
+            readLock.unlock();
         }
     }
 
     @Override
     public double totalSalary() {
-        locker.lock();
+        readLock.lock();
         try {
             return employees.stream()
                     .mapToDouble(Employee::calcSalary)
                     .sum();
         } finally {
-            locker.unlock();
+            readLock.unlock();
         }
     }
 
     @Override
     public double totalSales() {
-        locker.lock();
+        readLock.lock();
         try {
             return employees.stream()
                     .filter(employee -> employee instanceof SalesManager)
                     .mapToDouble(employee -> ((SalesManager) employee).getSalesValue())
                     .sum();
         } finally {
-            locker.unlock();
+            readLock.unlock();
         }
     }
 
@@ -119,13 +131,13 @@ public class CompanyStreamImpl implements Company {
     }
 
     private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
-        locker.lock();
+        writeLock.lock();
         try {
             return employees.stream()
                     .filter(predicate)
                     .toArray(Employee[]::new);
         } finally {
-            locker.unlock();
+           writeLock.unlock();
         }
     }
 }
