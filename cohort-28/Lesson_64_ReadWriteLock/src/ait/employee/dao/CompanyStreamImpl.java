@@ -3,11 +3,10 @@ package ait.employee.dao;
 import ait.employee.model.Employee;
 import ait.employee.model.SalesManager;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.Predicate;
 
@@ -18,126 +17,123 @@ import java.util.function.Predicate;
  */
 
 public class CompanyStreamImpl implements Company {
-    private final Lock locker = new ReentrantLock();
-    private final ReadWriteLock rwLock = new ReentrantReadWriteLock();
-    private final Lock readLock = rwLock.readLock();
-    private final Lock writeLock = rwLock.writeLock();
-
-    private final Set<Employee> employees;
+    ReadWriteLock rwLock = new ReentrantReadWriteLock();
+    Lock rLock = rwLock.readLock();
+    Lock wLock = rwLock.writeLock();
+    private Map<Integer, Employee> employees;
     private int capacity;
 
     public CompanyStreamImpl(int capacity) {
         this.capacity = capacity;
-        employees = new HashSet<>();
+        employees = new HashMap<>();
     }
 
+    //O(1)
     @Override
     public boolean addEmployee(Employee employee) {
-        if (employee == null) {
-            return false;
-        }
-        writeLock.lock();
+        wLock.lock();
         try {
-            if (employees.size() == capacity) {
+            if (employee == null || quantity() == capacity) {
                 return false;
             }
-            return employees.add(employee);
+            return employees.putIfAbsent(employee.getId(), employee) == null;
         } finally {
-            writeLock.unlock();
+            wLock.unlock();
         }
     }
 
+    //O(1)
     @Override
     public Employee removeEmployee(int id) {
-        writeLock.lock();
+        wLock.lock();
         try {
-            Employee victim = findEmployee(id);
-            employees.remove(victim);
-            return victim;
+            return employees.remove(id);
         } finally {
-            writeLock.unlock();
+            wLock.unlock();
         }
     }
 
+    //O(1)
     @Override
     public Employee findEmployee(int id) {
-        readLock.lock();
+        rLock.lock();
         try {
-            return employees.stream()
-                    .filter(employee -> employee.getId() == id)
-                    .findFirst()
-                    .orElse(null);
+            return employees.get(id);
         } finally {
-            readLock.unlock();
+            rLock.unlock();
         }
     }
 
+    //O(1)
     @Override
     public int quantity() {
-        readLock.lock();
+        rLock.lock();
         try {
             return employees.size();
         } finally {
-            readLock.unlock();
+            rLock.unlock();
         }
     }
 
+    // O(n)
     @Override
     public double totalSalary() {
-        readLock.lock();
+        rLock.lock();
         try {
-            return employees.stream()
+            return employees.values().stream()
                     .mapToDouble(Employee::calcSalary)
                     .sum();
         } finally {
-            readLock.unlock();
+            rLock.unlock();
         }
     }
 
+    // O(n)
     @Override
     public double totalSales() {
-        readLock.lock();
+        rLock.lock();
         try {
-            return employees.stream()
-                    .filter(employee -> employee instanceof SalesManager)
-                    .mapToDouble(employee -> ((SalesManager) employee).getSalesValue())
+            return employees.values().stream()
+                    .filter(e -> e instanceof SalesManager)
+                    .map(e -> (SalesManager) e)
+                    .mapToDouble(SalesManager::getSalesValue)
                     .sum();
         } finally {
-            readLock.unlock();
+            rLock.unlock();
         }
     }
 
+    // O(n)
     @Override
     public void printEmployees() {
-        locker.lock();
+        rLock.lock();
         try {
-            employees.forEach(System.out::println);
+            employees.values().forEach(e -> System.out.println(e));
         } finally {
-            locker.unlock();
+            rLock.unlock();
         }
     }
 
+    //O(n)
     @Override
     public Employee[] findEmployeesHoursGreaterThan(int hours) {
         return findEmployeesByPredicate(e -> e.getHours() >= hours);
     }
 
+    //O(n)
     @Override
     public Employee[] findEmployeesSalaryRange(int min, int max) {
-        Predicate<Employee> predicate = employee -> employee.calcSalary() >= min && employee.calcSalary() < max;
-        return employees.stream()
-                .filter(predicate)
-                .toArray(Employee[]::new);
+        return findEmployeesByPredicate(e -> e.calcSalary() >= min && e.calcSalary() < max);
     }
 
-    private Employee[] findEmployeesByPredicate(Predicate<Employee> predicate) {
-        writeLock.lock();
+    private Employee[] findEmployeesByPredicate(Predicate<Employee> batska) {
+        rLock.lock();
         try {
-            return employees.stream()
-                    .filter(predicate)
+            return employees.values().stream()
+                    .filter(batska)
                     .toArray(Employee[]::new);
         } finally {
-           writeLock.unlock();
+            rLock.unlock();
         }
     }
 }
