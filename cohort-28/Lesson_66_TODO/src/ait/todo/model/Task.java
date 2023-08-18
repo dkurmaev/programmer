@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
-public class Task {
+
+public class Task implements Comparable<Task> {
     private String title;
     private String description;
     private Date dueDate;
@@ -17,6 +21,7 @@ public class Task {
         this.dueDate = dueDate;
         this.isCompleted = false;
     }
+
 
     public String getTitle() {
         return title;
@@ -70,5 +75,10 @@ public class Task {
     @Override
     public String toString() {
         return "[" + (isCompleted ? "X" : " ") + "] " + title + " - " + dueDate;
+    }
+
+    @Override
+    public int compareTo(Task o) {
+        return dueDate.compareTo(o.dueDate);
     }
 }

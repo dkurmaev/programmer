@@ -22,7 +22,7 @@ public class ToDoAppl {
             System.out.println(i + ". " + tasks.get(i));
         }
 
-
+        // Можно пометить задачу как выполненную
         todoList.markTaskAsCompleted(0);
         System.out.println("Marked task as completed.");
 
@@ -32,7 +32,6 @@ public class ToDoAppl {
         }
     }
 }
-
 
 
 
