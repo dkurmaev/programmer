@@ -12,12 +12,15 @@ public class Reservation {
     private Date endTime;
     private List<Table> tables;
 
+    public Reservation() {
+    }
+
     public Reservation(int reservationId, Person customer, Date startTime, Date endTime) {
         this.reservationId = reservationId;
         this.customer = customer;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.tables = tables;
+
     }
 
     public int getReservationId() {
@@ -28,6 +31,7 @@ public class Reservation {
         this.reservationId = reservationId;
     }
 
+
     public Person getCustomer() {
         return customer;
     }
@@ -35,6 +39,7 @@ public class Reservation {
     public void setCustomer(Person customer) {
         this.customer = customer;
     }
+
 
     public Date getStartTime() {
         return startTime;
@@ -44,6 +49,7 @@ public class Reservation {
         this.startTime = startTime;
     }
 
+
     public Date getEndTime() {
         return endTime;
     }
@@ -51,15 +57,6 @@ public class Reservation {
     public void setEndTime(Date endTime) {
         this.endTime = endTime;
     }
-
-    public List<Table> getTables() {
-        return tables;
-    }
-
-    public void setTables(List<Table> tables) {
-        this.tables = tables;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -83,3 +80,4 @@ public class Reservation {
         return sb.toString();
     }
 }
+

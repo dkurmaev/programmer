@@ -11,6 +11,10 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
+    public Person() {
+
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -48,3 +52,4 @@ public class Person {
         return firstName + " " + lastName;
     }
 }
+

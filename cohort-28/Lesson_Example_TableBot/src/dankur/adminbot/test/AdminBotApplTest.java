@@ -1,4 +1,3 @@
-
 package dankur.adminbot.test;
 
 import dankur.adminbot.dao.AdminBotImpl;
@@ -7,6 +6,9 @@ import dankur.adminbot.model.Table;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -20,7 +22,7 @@ public class AdminBotApplTest {
 
     @BeforeEach
     void setUp() {
-        adminBot = new AdminBotImpl();
+        adminBot = new AdminBotImpl("src" + File.separator);
         table = new Table(3);
         adminBot.addTable(table);
         customer = new Person("Danil", "Kurmayev", "0987654321");
@@ -32,7 +34,7 @@ public class AdminBotApplTest {
     public void testAddTable() {
         Table table = new Table(2);
         adminBot.addTable(table);
-        assertTrue(adminBot.getTables().contains(table));
+        assertTrue(adminBot.getTables(2).contains(table));
     }
 
     @Test
@@ -77,10 +79,10 @@ public class AdminBotApplTest {
 
     @Test
     public void testAddExistingTable() {
-        Table table = new Table(1);
+        Table table = new Table(2);
         adminBot.addTable(table);
 
-        assertEquals(2, adminBot.getTables().size());
+        assertEquals(2, adminBot.getTables(2).size());
     }
 
     @Test
@@ -88,6 +90,21 @@ public class AdminBotApplTest {
         Date time = new Date(1635379200000L);
         String formattedTime = adminBot.formatTime(time);
 
-        assertEquals("28.10.2021 02:00:00", formattedTime);
+        assertEquals("28.10.2021 02:00", formattedTime);
     }
+
+    @Test
+    public void testCleanOldFiles() {
+        //TODO
+    }
+
+
+
+
+
+    @Test
+    public void testReadReservationsFromFile() {
+        //TODO
+    }
+
 }
