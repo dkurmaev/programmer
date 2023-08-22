@@ -68,3 +68,13 @@ footer {
     padding: 10px 0;
     text-align: center;
 }
+/* Стили для элемента с id "special-paragraph" */
+#special-paragraph {
+    font-style: italic;
+    color: #555;
+    transition: opacity .3s ease-in-out;
+
+}
+#special-paragraph:hover {
+    opacity: 0.5;
+}
