@@ -2,18 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ead3d96-6714-462a-8be0-80f43b026e3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/Test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/Test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/.idea/GitHub.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/Latest deployments.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/actions.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/branch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/code.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/deploy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/deployments.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/main_save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/pages-build-deployment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/pages.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/settings.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/view workflow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/загрузить файлы.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/комментарий.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/перетащить.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/images/создания репозитория.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/GitHub/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_03_23_08_2023/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_03_23_08_2023/.idea/Lesson_03_23_08_2023.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_03_23_08_2023/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_03_23_08_2023/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_03_23_08_2023/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lessson_02_HW_CSS_HTML/images/foto.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_01_HTML_21_08_2023" beforeDir="false" afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lesson_01_HTML_21_08_2023" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson_01_HTML_21_08_2023/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson_01_HTML_21_08_2023/.idea/Lesson_01_HTML_21_08_2023.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson_01_HTML_21_08_2023/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson_01_HTML_21_08_2023/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lesson_01_HTML_21_08_2023/Elephantidae.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AIT_28_Front/Lessson_02_HW_CSS_HTML/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lessson_02_HW_CSS_HTML/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AIT_28_Front/Lessson_02_HW_CSS_HTML/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../AIT_28_Front/Lessson_02_HW_CSS_HTML/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/Test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled/Test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +70,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Programmer/programmer/webstorm/frontend/Lessson_02_HW_CSS_HTML",
+    "last_opened_file_path": "D:/Programmer/programmer/AIT_28_Front/Lessson_02_HW_CSS_HTML",
     "list.type.of.created.stylesheet": "CSS",
     "vue.rearranger.settings.migration": "true"
   }
@@ -62,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1692707132833</updated>
       <workItem from="1692707134304" duration="780000" />
+      <workItem from="1692788071208" duration="49000" />
     </task>
     <servers />
   </component>

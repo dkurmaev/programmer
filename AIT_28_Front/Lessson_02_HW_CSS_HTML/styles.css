@@ -1,4 +1,4 @@
-/* Общие стили */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Стили для заголовка */
+
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -15,26 +15,26 @@ h1 {
     color: #ff6600;
 }
 
-/* Стили для подзаголовков */
+
 h2 {
     font-size: 24px;
     color: #007bff;
 }
 
-/* Стили для параграфа */
+
 p {
     font-size: 16px;
     line-height: 1.5;
 }
 
-/* Стили для списка */
+
 ul {
     list-style-type: square;
     margin-left: 20px;
     padding-left: 0;
 }
 
-/* Стили для ссылки */
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -44,7 +44,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Стили для секции */
+
 section {
     background-color: #fff;
     padding: 20px;
@@ -53,7 +53,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Стили для контейнера заголовка */
+
 header {
     background-color: #333;
     color: #fff;
@@ -61,20 +61,50 @@ header {
     text-align: center;
 }
 
-/* Стили для подвала */
+
 footer {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
     text-align: center;
 }
-/* Стили для элемента с id "special-paragraph" */
+
+
 #special-paragraph {
     font-style: italic;
     color: #555;
     transition: opacity .3s ease-in-out;
-
+    float: left;
+    width: 70%;
+    margin-right: 20px;
 }
+
 #special-paragraph:hover {
     opacity: 0.5;
 }
+
+
+#profile-image img{
+    float: right;
+    width: 180px;
+    height: 230px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    margin-top: 50px;
+
+}
+
+.project {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
