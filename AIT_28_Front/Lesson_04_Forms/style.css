@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", -apple-system, "Nunito", BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+}
+
+.registration {
+    width: 90%;
+
+}
+
+#gender {
+    width: fit-content;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #5df3d6;
+}
+
+.form-container {
+    width: 320px;
+    padding: 30px;
+    background: rgba(73, 119, 145, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(73, 119, 145, 0.24);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease-in-out;
+    width: 100%;
+}
+
+button {
+    width: 310px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    background: rgba(4, 4, 4, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(62, 148, 135, 0.1);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border: 1px solid rgba(103, 193, 149, 0.24);
+}
+
+.submit {
+    margin-top: 10px;
+    color: black;
+}
+
+.reset {
+    margin-top: 10px;
+    background-color: #f44336;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    background-color: #45a049;
+    opacity: 0.9;
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f;
+}
