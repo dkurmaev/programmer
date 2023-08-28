@@ -1,0 +1,41 @@
+/* Стили для цветных блоков */
+.blue, .red, .green, .orange, .yellow {
+    height: 100px;
+    text-align: center;
+    font-size: 2em;
+    color: white; /* Белый текст для контраста */
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+
+@media (max-width: 991px) {
+    .col-md-2 {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .green, .blue {
+        width: 100%;
+        display: inline-block;
+    }
+}
+

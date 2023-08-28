@@ -1,6 +1,6 @@
 
 * {
-    margin: 0;
+    margin: 1px;
     padding: 0;
     box-sizing: border-box;
 }
@@ -26,10 +26,7 @@ header {
     text-align: center;
     padding: 40px;
     height: 6em;
-
-    bottom: 0;
-    width: 100%;
-    clear: both;
+    position: relative;
 }
 
 h1 {
@@ -56,47 +53,28 @@ nav li {
     margin: 0 20px;
     font-size: 18px;
 }
-
-.left {
-    float: left;
-    width: 25%;
-    margin: 5px 10px 0 5px;
-}
-
-.right {
-    float: right;
-    width: 50%;
-    margin: 5px 5px 0 10px;
-    border: 1px solid yellow;
-    border-radius: 0 0 15px 15px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.right h2 {
-    text-align: center;
-    width: 100%;
-}
-
-img {
-    width: 100%;
-
+.left img {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 5%;
+    border-radius: 15px 15px 15px 15px;
+    border: 5px solid yellow;
 }
 .right img {
-    width: 30%;
+    margin-left: 25px;
+    width: 600px;
+    height: 400px;
+    float: left;
+    padding: 20px;
 }
-.bottomLeft{
-    border-bottom-left-radius: 15px;
+.farGalaxy {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    padding: 10px;
+
+
 }
-
-.bottomRight{
-    border-bottom-right-radius: 15px;
-}
-
-/*.farGalaxy{*/
-/*    font-size: 2em;*/
-/*}*/
-
-
-
