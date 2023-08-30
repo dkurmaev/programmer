@@ -1,41 +1,50 @@
-/* Стили для цветных блоков */
+
 .blue, .red, .green, .orange, .yellow {
     height: 100px;
     text-align: center;
     font-size: 2em;
-    color: white; /* Белый текст для контраста */
+    color: white;
 }
 
 .blue {
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .red {
     background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .green {
     background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .orange {
     background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .yellow {
     background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-@media (max-width: 991px) {
-    .col-md-2 {
-        flex-basis: 100%;
-    }
-}
-@media (max-width: 767px) {
-    .green, .blue {
-        width: 100%;
-        display: inline-block;
-    }
-}
+
+
+
 
