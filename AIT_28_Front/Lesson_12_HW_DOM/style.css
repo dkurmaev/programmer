@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+    font-size: 14px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.delete-button {
+    background-color: #ff4f4f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #c13131;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
