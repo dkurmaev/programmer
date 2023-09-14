@@ -1,8 +1,0 @@
-{
-  "plan": "plan.md",
-  "theory": "theory.md",
-  "homework": "homework.md",
-  "code": [
-     "code/src/ArrayRefAppl.java", "code/src/ArrayAdvAppl.java"
-  ]
-}
