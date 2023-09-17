@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0d90020-70c0-4a21-a4a8-f60fdddf32b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Lesson_12_HW_DOM/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_12_HW_DOM/.idea/Lesson_12_HW_DOM.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_12_HW_DOM/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_12_HW_DOM/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_12_HW_DOM/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lesson_12_HW_DOM/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Lesson_12_HW_DOM/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_17_react_ts/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_17_react_ts/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/lesson_17_react_ts/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_17_react_ts/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson_17_react_ts/src/setupTests.ts" beforeDir="false" />
-    </list>
+    <list default="true" id="c0d90020-70c0-4a21-a4a8-f60fdddf32b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +22,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Programmer/Front_end",
+    "last_opened_file_path": "D:/Programmer/Front_end/FullStack",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -46,8 +35,12 @@
       <option name="presentableId" value="Default" />
       <updated>1694854786956</updated>
       <workItem from="1694854790909" duration="90000" />
+      <workItem from="1694859409621" duration="593000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e4f543-92c6-45b2-b094-5be5e6d493e4" name="Changes" comment="updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +34,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.17.1",
     "javascript.nodejs.core.library.typings.version": "18.17.1",
-    "last_opened_file_path": "C:/Users/AIT TR Student/Downloads/projekt/fork",
+    "last_opened_file_path": "D:/Programmer/Front_end/FullStack",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "C:\\Program Files\\nodejs\\npm.cmd",
     "settings.editor.selected.configurable": "configurable.group.other",
@@ -53,6 +53,7 @@
       <workItem from="1694418280264" duration="935000" />
       <workItem from="1694457595040" duration="1102000" />
       <workItem from="1694458701559" duration="4369000" />
+      <workItem from="1694860132265" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1694459342597</created>
