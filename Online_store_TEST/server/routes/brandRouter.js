@@ -1,9 +1,10 @@
-const Routers = require('express');
-const router = new Routers();
+const Router = require('express');
+const router = new Router();
+const brandController = require('../controllers/brandController');
 
-router.post('/',);
-router.get('/',);
-router.delete('/',);
+router.post('/', brandController.create);
+router.get('/', brandController.getAll);
+
 
 
 

@@ -1,9 +1,10 @@
-const Routers = require('express');
-const router = new Routers();
+const Router = require('express');
+const router = new Router();
+const typeController = require('../controllers/typeController');
 
-router.post('/name',);
-router.get('/name',);
-router.get('/name/:id',);
+router.post('/', typeController.create);
+router.get('/', typeController.getAll);
+
 
 
 
