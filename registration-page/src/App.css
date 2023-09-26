@@ -1,0 +1,144 @@
+/* index_styles.css */
+html,
+body {
+  background-image: url("images/background1.jpg");
+  /* background-position: 50% 50%; */
+  background-size: cover ;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  flex-direction: column;
+}
+/* ВЕРХНИЙ контейнер */
+.container-top {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 40px;
+  display: flex;
+  align-items: center;
+  transition: width 1s ease, height 0.5s ease;
+  white-space: nowrap; /* Запрет переноса текста на новую строку */
+  overflow: hidden; /* Скрытие текста, который выходит за пределы контейнера */
+  position: relative; /* Устанавливаем позицию контейнера как относительную */
+}
+
+
+/* СРЕДНИЙ контейнер */
+.container-middle {
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  transition: width 1s ease, height 0.5s ease;
+}
+
+
+/* ОБЩИЙ СТИЛЬ ДЛЯ НИЖНЕГО КОНТЕЙНЕРА */
+.container-bottom.row {
+  margin: 5px;
+  height: 40px;
+}
+
+/* НИЗ ЛЕВЫЙ */
+.container-bottom-left.col {
+  transition: width 1s ease, height 0.5s ease;
+  max-width: 52px;
+  white-space: nowrap;
+  background-color: transparent;
+}
+
+/* НИЗ ЦЕНТР */
+.container-bottom-center.col {
+  margin-left: 3px;
+  border-radius: 10px;
+  max-width: 100%;
+  max-height: 40px;
+  transition: width 1s ease, height 0.5s ease;
+  padding: 4px;
+  white-space: nowrap; /* Запрет переноса текста на новую строку */
+  overflow: hidden; /* Скрытие текста, который выходит за пределы контейнера */
+}
+
+/* НИЗ ПРАВО ВРЕМЯ */
+.container-bottom-right.col {
+  margin-left: 3px;
+  text-align: center;
+  background-color: rgba(116, 116, 116, 0.2);
+  border-radius: 10px;
+  max-width: fit-content;
+  color: aliceblue;
+  white-space: nowrap;
+  padding: 4px;
+  backdrop-filter: blur(5px);
+}
+
+.container-middle,
+.container-top,
+.container-bottom-center,
+.menuBottomButton {
+  background-color: rgba(203, 206, 234, 0.149);
+  backdrop-filter: blur(15px);
+}
+
+/* текст ВЕРХНЕГО контейнера */
+.container-top-text {
+  font-size: 20px;
+  margin-top: 10px;
+  color: antiquewhite;
+  text-align: center;
+  flex: content;
+  animation: moveText 10s linear infinite alternate; /* Анимация движения текста */
+  position: relative; /* Устанавливаем позицию текста как относительную */
+  overflow: hidden;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0); /* Текст в начальной позиции */
+  }
+  100% {
+    transform: translateX(calc(100% - 100vw)); /* Текст в конечной позиции */
+  }
+}
+
+/* текст СРЕДНЕГО контейнера */
+.container-middle-text {
+  font-size: 20px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+/* текст НИЖНЕГО центра и ЧАСОВ */
+.container-bottom-center-text,
+.container-bottom-right-text {
+  font-size: 20px;
+  color: antiquewhite;
+  text-align: center;
+  flex: content;
+}
+
+/* Стиль для кнопки Меню */
+.menuBottomButton {
+  border: transparent;
+  color: antiquewhite;
+  border-radius: 8px;
+  font-size: 20px;
+  height: 40px;
+  width: 50px;
+  padding-top: 2px;
+  color: aliceblue;
+}
+
+/* ЧАСЫ при сужении окна остаются */
+@media (max-width: 768px) {
+  .container-bottom-center {
+    order: 1;
+  }
+}

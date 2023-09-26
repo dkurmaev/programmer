@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://getbootstrap.su/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet"> 
+  <title>Bootstrap Example</title>
+  <link href="index.css" rel="stylesheet">  
+  <link href="./icons/app-indicator.svg" rel="shortcut icon" type="image/x-icon">
+  <title>Мой сайт</title>
+  <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="root"></div>
+  <div class="container-top row">
+    <div class="container-top-1 col d-flex rounded-3" style="display: flex;">
+      <p><span class="container-top-1-text">
+          v.<kbd>0.7</kbd>. Исправлено: <kbd> Логин-форма, добавлен поиск, разделен верхний контейнер на 3</kbd>
+        </span></p>
+    </div>
+    <div class="container-top-2 col d-flex rounded-3" style="display: flex;"></div>
+    <div class="container-top-3 col d-flex rounded-3">
+      <div>
+        <input id="searchBar" class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск"
+          style="background-color: rgba(255, 254, 254, 0);"><button class="btn search-icon" type="button"
+          style="background-color: rgba(250, 215, 231, 0);"><img src="./icons/pngegg (0).ico" alt="Иконка" height="32"
+            fill="currentColor" viewBox="0 0 16 16" style="opacity: 0.7;"></button>
+        <a href="#" class="search-icon"></a>
+      </div>
+    </div>
+  </div>
+  <div class="container-middle rounded-3">
+    <div id="container_middle_content">
+      <div id="dateTimeDisplay"></div>
+    </div><button type="button" class="btn-close hidden" aria-label="Закрыть" id="closeButton"></button>
+  </div>
+  <div class="container-bottom row rounded-3">
+    <div class="container-bottom-left col rounded-3">
+      <div class="dropdown">
+        <button type="button" class="btn  menuBottomButton" data-bs-theme="dark" id="menuBottomButton"
+          data-bs-toggle="dropdown" style="margin-left: -12px" href="#">
+          <img src="./icons/microsoft.ico" alt="Иконка" height="25" fill="currentColor" viewBox="0 0 16 16">
+        </button>
+        <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="menuBottomButton">
+          <a class="dropdown-item" href="#" id="loginForm">Авторизация</a>
+          <hr class="dropdown-divider">
+          <a class="dropdown-item" href="#" id="passwordRestoreForm">Сброс пароля</a>
+        </div>
+      </div>
+    </div>
+    <div class="container-bottom-center col rounded-3">
+      <div class="container-bottom-center-text">
+        <p>Сообщение от <kbd>АДМИНИСТРАТОРА</kbd>
+          <span class="badge bg-danger">3</span>
+        </p>
+      </div>
+    </div>
+    <div class="container-bottom-right col rounded-3">
+      <div id="dateTimeDisplayBottomRight"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
