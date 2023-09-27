@@ -7,7 +7,17 @@ const Promo = () => {
       <div className="container"> 
         <div className="promo__content"> 
           <div className="promo__text"> 
-            <div className="promo__title">LET’S EXPLORE UNIQUE CLOTHES.</div> 
+            <div className="promo__title">
+              <span class="highlight">
+                <span>LET’S</span>
+                </span>
+
+                EXPLORE
+
+                <span class="highlight highlight--yellow">
+                <span>UNIQUE</span>
+                </span>
+               CLOTHES.</div> 
             <div className="promo__desc">Live for Influential and Innovative fashion!</div> 
             <div className="promo__btn-wrapper"><a href="#!" className="promo__btn">Shop Now</a></div> 
           </div> 
