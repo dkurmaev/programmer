@@ -1,13 +1,102 @@
-body {
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Poller One', cursive;
+  color: yellow;
+  background-image: url("../images/sky.jpg");
+  background-attachment: fixed;
 }
+
+header {
+  background-color: rgba(60, 69, 67, .6);
+  border-radius: 15px 15px 0 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer {
+  background-color: rgba(60, 69, 67, .6);
+  border-radius: 0 0 15px 15px;
+  color: yellow;
+  text-align: center;
+  padding: 40px;
+  height: 6em;
+
+  bottom: 0;
+  width: 100%;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  padding: .5em 0;
+
+}
+
+h2 {
+  text-align: center;
+  padding: 50px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+.left {
+  float: left;
+  width: 25%;
+  margin: 5px 10px 0 5px;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  margin: 5px 5px 0 10px;
+  border: 1px solid yellow;
+  border-radius: 0 0 15px 15px ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.right h2 {
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+
+}
+.right img {
+  width: 30%;
+}
+.bottomLeft{
+  border-bottom-left-radius: 15px;
+}
+
+.bottomRight{
+  border-bottom-right-radius: 15px;
+}
+
+/*.farGalaxy{*/
+/*    font-size: 2em;*/
+/*}*/
+
+
+

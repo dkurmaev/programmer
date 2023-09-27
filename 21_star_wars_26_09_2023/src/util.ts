@@ -1,3 +1,1 @@
-export const navItems = [Home, About, Contact, Login, Register, Profile, Logout]
-    
-]
+export const navItems = ['Home', 'About me', 'Star wars', 'Contact'];
