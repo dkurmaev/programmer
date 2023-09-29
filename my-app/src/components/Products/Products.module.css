@@ -1,0 +1,74 @@
+/* Общие стили для контейнера продуктов */
+.productList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f0f0f0; /* Цвет фона */
+  padding: 20px;
+  margin: 0;
+}
+
+/* Стили для каждой карточки продукта */
+.productCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Стили для цены и названия продукта */
+.price, .title {
+  font-weight: bold;
+  color: #333; /* Цвет текста */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+/* Стили для изображения продукта */
+.image {
+  width: 100%; /* Заполнение ширины контейнера */
+  max-width: 300px; /* Максимальная ширина изображения */
+  height: auto; /* Автоматическая высота */
+  border-radius: 8px; /* Закругленные углы изображения */
+}
+
+/* Тень и анимация при наведении */
+.productCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для страницы продукта */
+.productPage {
+  text-align: center;
+  padding: 20px;
+}
+
+.productPage h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.productCard p {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.productCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.productCard .link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
