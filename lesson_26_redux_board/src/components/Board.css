@@ -1,11 +1,11 @@
-
 /* Стили для контейнера с доской */
 .game-board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    max-width: 400px; /* Ширина контейнера доски */
+    gap: 10px; /* Равное расстояние между клетками */
+    max-width: 200px; /* Ширина контейнера доски */
     margin: 0 auto; /* Центрирование на странице */
+    padding: 15px;
   }
   
   /* Стили для ряда на доске */
@@ -13,22 +13,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
   }
   
   /* Стили для клеток (квадратов) на доске */
   .square {
-    width: 100px; /* Размер клетки */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Размер клетки */
     height: 100px;
     font-size: 24px;
     text-align: center;
     line-height: 100px;
-    border: 1px solid #ccc;
+    background-color: #fff; /* Цвет фона клетки */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень клетки */
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
+  }
+  
+  .square:hover {
+    background-color: #eee; /* Измененный цвет фона при наведении */
   }
   
   /* Дополнительный стиль для выделенной (победной) клетки */
   .square.winner {
     background-color: #e6ffed; /* Цвет фона для победной клетки */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Тень победной клетки */
   }
   
   /* Стили для статуса игры */
@@ -47,10 +59,33 @@
     background-color: #007bff; /* Цвет фона кнопки */
     color: #fff; /* Цвет текста кнопки */
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень кнопки */
+    transition: background-color 0.3s ease; /* Плавный переход цвета фона */
   }
   
   .restart-button:hover {
-    background-color: #0056b3; /* Измененный цвет фона при наведении */
+    background-color: #4c90d8; /* Измененный цвет фона при наведении */
   }
   
+  /* Стили для общего контейнера приложения */
+  .App {
+    text-align: center;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Стили для контейнера игры */
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Стили для контейнера доски */
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

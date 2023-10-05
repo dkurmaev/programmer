@@ -52,7 +52,7 @@ export function calculateWinner(squares: (string | null)[]): string | null {
     }
   }
   if (squares.every((square) => square !== null)) {
-    return 'Draw';
+    return 'It is a Draw no body wins!';
   }
   return null;
 }
