@@ -1,0 +1,57 @@
+/* Board.css */
+
+/* Стили для контейнера с доской */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 400px; /* Ширина контейнера доски */
+    margin: 0 auto; /* Центрирование на странице */
+  }
+  
+  /* Стили для ряда на доске */
+  .board-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Стили для клеток (квадратов) на доске */
+  .square {
+    width: 100px; /* Размер клетки */
+    height: 100px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  /* Дополнительный стиль для выделенной (победной) клетки */
+  .square.winner {
+    background-color: #e6ffed; /* Цвет фона для победной клетки */
+  }
+  
+  /* Стили для статуса игры */
+  .status {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Стили для кнопки "Начать заново" */
+  .restart-button {
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .restart-button:hover {
+    background-color: #0056b3; /* Измененный цвет фона при наведении */
+  }
+  
