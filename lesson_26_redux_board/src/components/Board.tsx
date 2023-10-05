@@ -4,14 +4,14 @@ import Square from "./Square";
 import { makeMove, restart, selectSquares, selectXIsNext } from "../store/boardSlice";
 import { calculateWinner } from "../store/boardSlice";
 import { RootState } from "../app/store";
-import './Board.css'; // Импорт файла стилей
-
+import './Board.css';
 
 const Board = () => {
     const squares: (string | null)[] = useSelector((state: RootState) => selectSquares(state));
     const xIsNext = useSelector((state: RootState) => selectXIsNext(state));
     const dispatch = useDispatch();
     const winner = calculateWinner(squares);
+
     let status;
     if (winner) {
         status = `Победитель: ${winner}`;
