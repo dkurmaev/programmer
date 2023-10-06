@@ -1,0 +1,106 @@
+.register-login-container {
+  width: fit-content;
+  display: flex;
+  margin: 4rem auto 1rem;
+
+  &__img {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.register-login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    h1 {
+      margin-bottom: 1rem;
+    }
+    margin-bottom: 2rem;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__button {
+    margin-right: .5rem;
+    padding: .75rem 1.2rem;
+    width: fit-content;
+  }
+
+  &__line {
+    width: 90%;
+    height: 1px;
+    background-color: #D1D1D1;
+    margin: 2rem auto 1rem;
+  }
+
+  h4 {
+    text-align: center;
+
+    .register-link, .login-link {
+      margin-left: .5rem;
+      text-decoration-line: underline;
+      text-underline-offset: 3px;
+    }
+  }
+
+  &__alternative-signup {
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+
+    &__button {
+      padding: .5rem .6rem;
+      margin: 0 .5rem;
+      background-color: #F9F9F9;
+      width: fit-content;
+      border: 2px solid #D1D1D1;
+
+      display: flex;
+      align-self: center;
+  
+      img {
+        width: 1.7rem;
+        height: auto;
+      }
+  
+      &:hover {
+        border-color: rgba($accent-color, .5);
+      }
+    }
+  }
+}
+
+.register {
+  max-width: 40rem;
+}
+
+.login {
+  max-width: 20rem;
+}
+
+
+@media screen and (max-width: 767px) {
+  .register-login-container {
+    margin-top: 1rem;
+    &__img {
+      display: none
+    }
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+}

@@ -63,16 +63,15 @@ code {
   justify-content: center;  
   border-radius: 50px;
   cursor: pointer;
-  color: #000000;
-  background-color: #ffffff  ;
+  color: #ffffff;
+  background-color: #5c4040;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 2);  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
   position: relative;
-  margin-left: 327px;
+  
   margin-top: 5px;
   font-size: 18px;
   font-weight: 700;
-  
 }
 
 
