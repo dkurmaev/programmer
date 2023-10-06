@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.custom-style {
+  background-color: #c09494;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 2);
+  /* Другие настройки стилей */
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #ffffff;
+  color: #000000;
+
+}
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  
+
+}
+.button {
+  width: 30%; 
+  display: flex;
+  justify-content: center;  
+  border-radius: 50px;
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff  ;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 2);  
+  position: relative;
+  margin-left: 327px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  
+}
+
+
+
+
