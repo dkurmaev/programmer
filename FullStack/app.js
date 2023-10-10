@@ -20,6 +20,7 @@ app.use(passport.initialize());
 require('./middleware/passport')(passport);
 
 app.use(require('morgan')('dev')); // Использование логгера Morgan в режиме разработки
+app.use('/uploads', express.static('uploads')); // Подключение статической папки для загрузки файлов
 app.use(bodyParser.urlencoded({ extended: true })); // Парсинг URL-encoded данных
 app.use(bodyParser.json()); // Парсинг JSON данных
 app.use(require('cors')()); // Использование CORS middleware для разрешения кросс-доменных запросов
