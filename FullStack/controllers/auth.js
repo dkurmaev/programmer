@@ -2,6 +2,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken"); // Добавили библиотеку для работы с JWT
 const User = require("../models/User");
 const keys = require("../config/keys");
+const errorHandler = require("../utils/errorHandler");
 
 module.exports.login = async function (req, res) {
   // Поиск пользователя по email
@@ -60,11 +61,15 @@ module.exports.register = async function (req, res) {
       password: bcrypt.hashSync(password, salt), // Хеширование пароля
     });
 
-    // Сохранение пользователя в базе данных
-    await user.save();
-
-    res.status(201).json({
-      message: "User has been created successfully",
-    });
+    
+    try {
+      await user.save();
+      res.status(201).json({
+        message: "User has been created successfully"
+      });
+    } catch (e) {
+      //Обработка ошибки
+      errorHandler(res, e);
+    }
   }
-};
+}
