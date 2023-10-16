@@ -1,16 +1,67 @@
-<div class="card">
+<form class="card" [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="card-content">
-        <span class="card-title">Benutzerkonto erstellen</span>
-        <div class="input-field">
-            <input id="email" type="email" required>
-            <label for="email">E-Mail:</label>
-        </div>
-        <div class="input-field">
-            <input id="password" type="password" required>
-            <label for="password">Passwort:</label>
-        </div>
+      <span class="card-title">Regestrieren</span>
+      <div class="input-field">
+        <input
+          formControlName="email"
+          id="email"
+          type="email"
+          [ngClass]="{
+            invalid: form.get('email')?.invalid && form.get('email')?.touched
+          }"
+        />
+        <label for="email">E-Mail:</label>
+        <span
+          class="helper-text red-text"
+          *ngIf="form.get('email')?.invalid && form.get('email')?.touched"
+        >
+          <span *ngIf="form.get('email')?.errors?.['required']"
+            >E-Mail darf nicht leer sein</span
+          >
+          <span *ngIf="form.get('email')?.errors?.['email']"
+            >Geben Sie eine gültige E-Mail-Adresse ein</span
+          >
+        </span>
+      </div>
+      <div class="input-field">
+        <input
+          formControlName="password"
+          id="password"
+          type="password"
+          [ngClass]="{
+            invalid:
+              form.get('password')?.invalid && form.get('password')?.touched
+          }"
+        />
+        <label for="password">Passwort:</label>
+        <span
+          class="helper-text red-text"
+          *ngIf="form.get('password')?.invalid && form.get('password')?.touched"
+        >
+          <span *ngIf="form.get('password')?.errors?.['required']"
+            >Passwort darf nicht leer sein</span
+          >
+          <span
+            *ngIf="form.get('password')?.errors?.['minlength'] && form.get('password')?.errors?.['minlength']['requiredLength']"
+          >
+            Das Passwort sollte mindestens
+            {{form.get('password')?.errors?.['minlength']['requiredLength']}}
+            Zeichen lang sein Aktuell
+            {{form.get('password')?.errors?.['minlength']['actualLength']}}
+            Zeichen lang
+          </span>
+        </span>
+      </div>
     </div>
+  
     <div class="card-action">
-        <button class="modal-action btn waves-effect">Erstellen</button>
+      <button
+        type="submit"
+        class="modal-action btn waves-effect"
+        [disabled]="form.invalid"
+      >
+        Benutzer Konto Erstellen
+      </button>
     </div>
-</div>
+  </form>
+  
