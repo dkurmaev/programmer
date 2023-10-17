@@ -30,6 +30,7 @@
     "passport-jwt": "^4.0.1"
   },
   "devDependencies": {
+    "@types/materialize-css": "^1.0.12",
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1"
   }
