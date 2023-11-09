@@ -1,0 +1,257 @@
+<manifest alg="2" build="2018.1.0.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="Indigomedia.de" resolutions="1x" timestamp="1664790450985">
+  <folder name="css">
+    <file name="site_global.css" crc="3806909573"/>
+    <file name="master_______-b.css" crc="4290928764" ref="sprache:datum:bedienusganleitung:wlan"/>
+    <file name="master_______-a.css" crc="3842578100" ref="index"/>
+    <file name="sprache.css" crc="515435486" ref="sprache"/>
+    <file name="index.css" crc="528435936" ref="index"/>
+    <file name="datum.css" crc="430477804" ref="datum"/>
+    <file name="bedienusganleitung.css" crc="4236975727" ref="bedienusganleitung"/>
+    <file name="wlan.css" crc="391036108" ref="wlan"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="museutils.js" crc="340535759" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="whatinput.js" crc="86476730" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="museconfig.js" crc="4286661555" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="webpro.js" crc="4059564322" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="form_check.php" crc="4020933626" ref="index"/>
+    <file name="form_throttle.php" crc="4259590256" ref="index"/>
+    <file name="form_process.php" crc="37464564" ref="index"/>
+    <file name="form-u2409.php" crc="192795295" ref="index"/>
+    <file name="require.js" crc="7928878" ref="index:bedienusganleitung:sprache:datum:wlan"/>
+    <file name="form-u4748.php" crc="490838685" ref="bedienusganleitung"/>
+    <file name="form-u9048.php" crc="290509288" ref="sprache"/>
+    <file name="form-u9301.php" crc="382338809" ref="datum"/>
+    <file name="form-u9507.php" crc="4238016928" ref="wlan"/>
+  </folder>
+  <folder name="images">
+    <file name="rectangle3.jpg" crc="4152801123" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rectangle.jpg" crc="348331584" ref="index:bedienusganleitung">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="navi-u328.png" crc="487176039" ref="index"/>
+    <file name="rectangleintro-u339.png" crc="3899559556" ref="index"/>
+    <file name="kaufen buton 260-u7229.png" crc="215088789" ref="index"/>
+    <file name="kaufen buton 260-u7229-r.png" crc="1992324" ref="index"/>
+    <file name="display.png" crc="20158302" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rectangleintro-u1254.png" crc="3899559556" ref="index"/>
+    <file name="kaufen buton 290-u7301.png" crc="487237316" ref="index"/>
+    <file name="kaufen buton 290-u7301-r.png" crc="4063872804" ref="index"/>
+    <file name="capacitive.png" crc="4275229982" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rectangleintro-u1229.png" crc="3899559556" ref="index"/>
+    <file name="kaufen buton 260-u7312.png" crc="215088789" ref="index"/>
+    <file name="kaufen buton 260-u7312-r.png" crc="1992324" ref="index"/>
+    <file name="sd.png" crc="374749092" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="rectangleintro-u7363.png" crc="3858875392" ref="index"/>
+    <file name="kaufen buton 260-u7365.png" crc="215088789" ref="index"/>
+    <file name="kaufen buton 260-u7365-r.png" crc="1992324" ref="index"/>
+    <file name="фон копия 2.jpg" crc="337825526" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="android738-u6736-fr.png" crc="3832254045" ref="index"/>
+    <file name="hauptmenu_1_clear_am radio.jpg" crc="60329698" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="taste_schließen_inaktiv.png" crc="252416163" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="taste_schließen_aktiv.png" crc="3798742081" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="слой 5.jpg" crc="390948739" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="слой 6.jpg" crc="4194947722" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bottom border-u6801.png" crc="49558359" ref="index"/>
+    <file name="sst (14).gif" crc="406428508" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="bottom border-u1091.png" crc="4270629608" ref="index"/>
+    <file name="bottom border-u1541.png" crc="49558359" ref="index"/>
+    <file name="facebook.png" crc="317936629" ref="index:bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="datum" alt=""/>
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="linkedin.png" crc="425971177" ref="index:bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="datum" alt=""/>
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="twitter.png" crc="4102706121" ref="index:bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="datum" alt=""/>
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="pinterest.png" crc="4214682508" ref="index:bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="datum" alt=""/>
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="dribbble.png" crc="4050684656" ref="index:bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="datum" alt=""/>
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="youtube.png" crc="442611654" ref="index:bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="index" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="sprache" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="bedienusganleitung" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="wlan" alt=""/>
+      <caption webpage="datum" alt=""/>
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u6721.png" crc="3911105878" seo="true" ref="bedienusganleitung">
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u4931.png" crc="3911105878" seo="true" ref="bedienusganleitung">
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="hauptmenu.jpg" crc="4181418821" ref="bedienusganleitung:sprache:datum:wlan">
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="hauptmenu_1.jpg" crc="4279257977" ref="bedienusganleitung">
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="bedienanleitung.jpg" crc="3999759313" ref="bedienusganleitung">
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="bedienanleitung_2.jpg" crc="292937698" ref="bedienusganleitung">
+      <caption webpage="bedienusganleitung" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="bedienusganleitung:sprache:datum:wlan"/>
+    <file name="pg-bkg-crop-u9073.png" crc="3911105878" seo="true" ref="sprache">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u9034.png" crc="3911105878" seo="true" ref="sprache">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="eunstellungen.jpg" crc="445751274" ref="sprache:datum:wlan">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="sprache_eingeben_2.jpg" crc="196766670" ref="sprache">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="einstellungen_sliden.jpg" crc="4012555988" ref="sprache:datum:wlan">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="sprache_eingeben.jpg" crc="140053896" ref="sprache">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="sprache_eingeben_3.jpg" crc="4064247475" ref="sprache">
+      <caption webpage="sprache" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u9324.png" crc="3911105878" seo="true" ref="datum">
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u9289.png" crc="3911105878" seo="true" ref="datum">
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="datum_1.jpg" crc="4136985054" ref="datum:wlan">
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="datum.jpg" crc="209833308" ref="datum:wlan">
+      <caption webpage="datum" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u9496.png" crc="3911105878" seo="true" ref="wlan">
+      <caption webpage="wlan" alt=""/>
+    </file>
+    <file name="pg-bkg-crop-u9538.png" crc="3911105878" seo="true" ref="wlan">
+      <caption webpage="wlan" alt=""/>
+    </file>
+    <file name="rectangle copy 3-u1071.png" crc="336432748" ref="index"/>
+    <file name="rectangle copy 3-u1082.png" crc="336432748" ref="index"/>
+    <file name="rectangle copy 3-u1088.png" crc="336432748" ref="index"/>
+    <file name="sprachen.png" crc="4240534869" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="cnn.png" crc="418996909" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="casio.png" crc="359432307" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="fuji.png" crc="4087081730" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="adv.png" crc="184739793" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="left_clients.png" crc="490344933" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="right_clients.png" crc="4003193256" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="testimonials-bkg.jpg" crc="4279516987" ref="index"/>
+    <file name="слой 8.jpg" crc="407660537" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+  </folder>
+  <file name="index.html" crc="4119290007" seo="true" mt="1664790371069" redirect="true"/>
+  <file name="bedienusganleitung.html" crc="3820402703" seo="true" mt="1486042990388" redirect="true"/>
+  <file name="sprache.html" crc="488866347" seo="true" mt="1486042973888" redirect="true"/>
+  <file name="datum.html" crc="225117909" seo="true" mt="1486047141780" redirect="true"/>
+  <file name="wlan.html" crc="310573376" seo="true" mt="1486047150105" redirect="true"/>
+</manifest>

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="de-DE">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.0.386"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "jquery.musepolyfill.bgsize.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <title>Hauptseite</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=3806909573"/>
+  <link rel="stylesheet" type="text/css" href="css/master_______-a.css?crc=3842578100"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=528435936" id="pagesheet"/>
+    <!--HTML Widget code-->
+  
+        <style>
+.jquery-shadow {
+	position:relative;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+	   -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.jquery-shadow:before,
+.jquery-shadow:after {
+    content:"";
+    position:absolute; 
+    z-index:-2;
+}
+
+
+
+/* Lifted corners */
+
+.jquery-shadow-lifted:before,
+.jquery-shadow-lifted:after { 
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);   
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+            box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);    
+       -moz-transform:rotate(-3deg);   
+        -ms-transform:rotate(-3deg);   
+         -o-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+}
+
+.jquery-shadow-lifted:after {
+    right:10px; 
+    left:auto;
+    -webkit-transform:rotate(3deg);   
+       -moz-transform:rotate(3deg);  
+        -ms-transform:rotate(3deg);  
+         -o-transform:rotate(3deg);
+            transform:rotate(3deg);
+}
+
+/* Perspective */
+
+.jquery-shadow-perspective:before {
+    left:108px;
+    bottom:2px;
+    width:50%;
+    height:35%;
+    max-width:200px;
+    -webkit-box-shadow:-80px 0 8px rgba(0, 0, 0, 0.4);
+       -moz-box-shadow:-80px 0 8px rgba(0, 0, 0, 0.4);
+            box-shadow:-80px 0 8px rgba(0, 0, 0, 0.4);
+    -webkit-transform:skew(50deg);
+       -moz-transform:skew(50deg);
+        -ms-transform:skew(50deg);
+         -o-transform:skew(50deg);
+            transform:skew(50deg);
+    -webkit-transform-origin:0 100%;
+       -moz-transform-origin:0 100%;
+        -ms-transform-origin:0 100%;
+         -o-transform-origin:0 100%;
+            transform-origin:0 100%;
+}
+
+.jquery-shadow-perspective:after {
+    display:none;
+}
+
+
+/* Side shadows */
+
+.jquery-shadow-sides:before {
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:50%;
+    -webkit-box-shadow:0 0 15px rgba(0,0,0,0.6);
+    -moz-box-shadow:0 0 15px rgba(0,0,0,0.6);
+    box-shadow:0 0 15px rgba(0,0,0,0.6);
+    -moz-border-radius:10px / 100px;
+    border-radius:10px / 100px;
+}
+
+.jquery-shadow-sides-vt-2:before {
+    right:0;
+}
+
+.jquery-shadow-sides-hz-1:before {
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+.jquery-shadow-sides-hz-2:before {
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+ /* Raised shadow - no pseudo-elements needed */
+        
+.jquery-shadow-raised {
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+/* Rotated box */
+
+.jquery-shadow-rotated :first-child:before {
+    content:"";
+    position:absolute;
+    z-index:-1;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+</style>
+		
+<style type="text/css">#u7239.size_fluid_width_height iframe { position:absolute; left:0; top:0; }</style>
+
+ </head>
+ <body>
+
+  <div class="rounded-corners clearfix borderbox" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu1952"><!-- column -->
+    <div class="browser_width colelem" id="u1952-bw">
+     <div id="u1952"><!-- group -->
+      <div class="clearfix" id="u1952_align_to_page">
+       <div class="clearfix grpelem" id="pu1953-4"><!-- column -->
+        <div class="clearfix colelem" id="u1953-4"><!-- content -->
+         <p>INDIGOMEDIA</p>
+        </div>
+        <div class="clearfix colelem" id="u1954-4"><!-- content -->
+         <p>Ihr Guide in Car-Media Welt</p>
+        </div>
+       </div>
+       <div class="grpelem" id="u1955"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="pu1956-4"><!-- group -->
+        <a class="nonblock nontext clearfix grpelem" id="u1956-4" href="http://www.ebay.de/usr/carmediashop-de?_trksid=p2047675.l2559"><!-- content --><p>Startseite</p></a>
+        <div class="clearfix grpelem" id="u1957-6"><!-- content -->
+         <p>Meistgestellte Fargen</p>
+         <p>und Antworten.</p>
+        </div>
+        <a class="nonblock nontext MuseLinkActive grpelem" id="u6804" href="index.html"><!-- simple frame --></a>
+       </div>
+       <div class="grpelem" id="u1958"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="pu1959-4"><!-- column -->
+        <a class="nonblock nontext clearfix colelem" id="u1959-4" href="https://www.xomax.de/download.html" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content --><p>Downloads</p></a>
+        <div class="clearfix colelem" id="u1960-8" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p>Bedienungsanleitungen,</p>
+         <p>software Update, Firm-</p>
+         <p>ware u.s.w.</p>
+        </div>
+       </div>
+       <div class="grpelem" id="u1961"><!-- simple frame --></div>
+       <div class="clearfix grpelem" id="pu1962-4"><!-- group -->
+        <div class="clearfix grpelem" id="u1962-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p>Zum Shop</p>
+        </div>
+        <div class="clearfix grpelem" id="u1963-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p>Bei Unsere Ebay shop Sie haben noch mehrere auswal</p>
+        </div>
+        <a class="nonblock nontext grpelem" id="u1964" href="https://www.ebay.de/str/argashop"><!-- simple frame --></a>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu7336"><!-- group -->
+     <div class="browser_width grpelem" id="u7336-bw">
+      <div id="u7336"><!-- group -->
+       <div class="clearfix" id="u7336_align_to_page">
+        <div class="clearfix grpelem" id="u1050-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p>ANDROID 5.1.1</p>
+        </div>
+        <div class="clearfix grpelem" id="u1053-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p>ANDROID 6.0.1</p>
+        </div>
+        <div class="clearfix grpelem" id="u1056-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+         <p>ANDROID 6.0.1</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u1059-8" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Model zum Beispiel:</p>
+      <p>XM-VRSUA737; XM-VRSUA744</p>
+      <p>XM-VRSUA738 u.n.s.w...</p>
+     </div>
+     <div class="clearfix grpelem" id="u1062-8" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Model zum Beispiel:</p>
+      <p>XM-VRSUA737; XM-VRSUA744</p>
+      <p>XM-VRSUA738 u.n.s.w...</p>
+     </div>
+     <div class="clearfix grpelem" id="u1068-8" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Model zum Beispiel:</p>
+      <p>XM-VRSUA737; XM-VRSUA744</p>
+      <p>XM-VRSUA738 u.n.s.w...</p>
+     </div>
+     <div class="grpelem" id="u1071"><!-- rasterized frame --></div>
+     <div class="grpelem" id="u1082"><!-- rasterized frame --></div>
+     <div class="grpelem" id="u1088"><!-- rasterized frame --></div>
+     <div class="PamphletWidget clearfix grpelem" id="pamphletu7076" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <div class="popup_anchor" id="u7077popup">
+       <div class="ContainerGroup clearfix" id="u7077" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+        <div class="Container AS-Slider-Slide-Background clearfix grpelem" id="u7082" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="grpelem" id="u328"><!-- rasterized frame --></div>
+         <div class="clearfix grpelem" id="pu325-4"><!-- column -->
+          <div class="clearfix colelem" id="u325-4"><!-- content -->
+           <p>GPS Navigation</p>
+          </div>
+          <div class="colelem" id="u339"><!-- rasterized frame --></div>
+          <div class="clearfix colelem" id="u350-7"><!-- content -->
+           <p>Installieren Sie eine Lieblings-Navigations-App aus Playstore und navigieren Sie wie gewohnt.</p>
+           <p>&nbsp;</p>
+           <p>Dank Internetverbindung ist Ihre Navi so immer aktuell und ist auch fähig Verkehrsnews zu empfangen.</p>
+          </div>
+          <div class="colelem" id="u7229"><!-- state-based BG images -->
+           <div class="fluid_height_spacer"></div>
+          </div>
+         </div>
+        </div>
+        <div class="Container invi AS-Slider-Slide-Background clearfix grpelem" id="u7078" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="museBGSize grpelem" id="u1242"><!-- simple frame --></div>
+         <div class="clearfix grpelem" id="pu1253-4"><!-- column -->
+          <div class="clearfix colelem" id="u1253-4"><!-- content -->
+           <p>1080p FullHD</p>
+          </div>
+          <div class="colelem" id="u1254"><!-- rasterized frame --></div>
+          <div class="clearfix colelem" id="u1255-7"><!-- content -->
+           <p>Auf dem XOMAX System können Sie Videoformate mit bis zu Full HD Auflösung 1920 x 1080 Pixel (1080p) skaliert auf dem 7 Zoll Bildschrim wiedergeben.</p>
+           <p>&nbsp;</p>
+           <p>Das gilt sowohl für zahlreiche Videoformate als auch für Videos aus Online Stream Diensten wie Youtube. Selbstverständlich werden kleinere Auflösungen auch unterstützt.</p>
+          </div>
+          <div class="colelem" id="u7301"><!-- state-based BG images -->
+           <div class="fluid_height_spacer"></div>
+          </div>
+         </div>
+        </div>
+        <div class="Container invi AS-Slider-Slide-Background clearfix grpelem" id="u7080" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="museBGSize grpelem" id="u1217"><!-- simple frame --></div>
+         <div class="clearfix grpelem" id="pu1228-4"><!-- column -->
+          <div class="clearfix colelem" id="u1228-4"><!-- content -->
+           <p>Capacitive Display</p>
+          </div>
+          <div class="colelem" id="u1229"><!-- rasterized frame --></div>
+          <div class="clearfix colelem" id="u1230-7"><!-- content -->
+           <p>Touchscreen mit Kapacitiv Technologie. Besonders Präzise, klare Bildwiedergabe und langlebig.</p>
+           <p>&nbsp;</p>
+           <p>Großer Monitor im Breitbildformat, mit 18 cm / 7'' Bilddiagonale und 1024 x 600 Pixeln Auflösung.</p>
+          </div>
+          <div class="colelem" id="u7312"><!-- state-based BG images -->
+           <div class="fluid_height_spacer"></div>
+          </div>
+         </div>
+        </div>
+        <div class="Container invi AS-Slider-Slide-Background clearfix grpelem" id="u7339" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="grpelem" id="u7361"><!-- simple frame --></div>
+         <div class="clearfix grpelem" id="u7362-4"><!-- content -->
+          <p>16 GB internet Speicher</p>
+         </div>
+         <div class="grpelem" id="u7363"><!-- rasterized frame --></div>
+         <div class="clearfix grpelem" id="u7364-6"><!-- content -->
+          <p>Der Interne Speicher lässt sich mittels SD-Karten auf bis zu 128 GB oder USB-Medien auf bis zu 2TB erweitern.</p>
+          <p>Es steht Ihnen ein MicroSD-Slot für Ihre Daten zur Verfügung. Der zweite MicroSD-Kartenslot ist für Ihre Navisoftware reserviert, kann aber auch für andere Daten verwendet werden.</p>
+         </div>
+         <div class="grpelem" id="u7365"><!-- state-based BG images -->
+          <div class="fluid_height_spacer"></div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="ThumbGroup clearfix grpelem" id="u7092" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+       <div class="popup_anchor" id="u7105popup">
+        <div class="Thumb popup_element AS-Slider-Button-Normal clearfix" id="u7105" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="rounded-corners AS-Slider-Number AS-Slider-Number1 clearfix grpelem" id="u7106-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>1</p>
+         </div>
+         <div class="clearfix grpelem" id="pu7107-4"><!-- column -->
+          <div class="AS-Slider-Button-Title clearfix colelem" id="u7107-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <h4>GPS Navigation</h4>
+          </div>
+          <div class="AS-Slider-Button-Sub-Title clearfix colelem" id="u7108-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <p>Navigieren Sie mit&nbsp; Online-Karten</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u7093popup">
+        <div class="Thumb popup_element AS-Slider-Button-Normal clearfix" id="u7093" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="AS-Slider-Number AS-Slider-Number1 clearfix grpelem" id="u7096-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>2</p>
+         </div>
+         <div class="clearfix grpelem" id="pu7094-4"><!-- column -->
+          <div class="AS-Slider-Button-Title clearfix colelem" id="u7094-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <h4>1080p FullHD</h4>
+          </div>
+          <div class="AS-Slider-Button-Sub-Title clearfix colelem" id="u7095-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <p>Schauen Sie Videos online</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u7097popup">
+        <div class="Thumb popup_element AS-Slider-Button-Normal clearfix" id="u7097" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="AS-Slider-Number AS-Slider-Number1 clearfix grpelem" id="u7098-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>3</p>
+         </div>
+         <div class="clearfix grpelem" id="pu7100-4"><!-- column -->
+          <div class="AS-Slider-Button-Title clearfix colelem" id="u7100-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <h4>Capacitive Display</h4>
+          </div>
+          <div class="AS-Slider-Button-Sub-Title clearfix colelem" id="u7099-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <p>Mali-450MP4 Grafikprozessor.</p>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u7352popup">
+        <div class="Thumb popup_element AS-Slider-Button-Normal clearfix" id="u7352" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="AS-Slider-Number AS-Slider-Number1 clearfix grpelem" id="u7102-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>4</p>
+         </div>
+         <div class="clearfix grpelem" id="pu7103-4"><!-- column -->
+          <div class="AS-Slider-Button-Title clearfix colelem" id="u7103-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <h4>USB Anschlüsse</h4>
+          </div>
+          <div class="AS-Slider-Button-Sub-Title clearfix colelem" id="u7104-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+           <p>Micro SD-Kartenslot</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu371"><!-- group -->
+     <div class="clearfix grpelem" id="u371"><!-- group -->
+      <div class="PamphletWidget clearfix widget_invisible grpelem" id="pamphletu6731" data-islightbox="true" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- none box -->
+       <div class="ThumbGroup clearfix grpelem" id="u6743" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+        <div class="popup_anchor" id="u6746popup">
+         <div class="Thumb popup_element rgba-background" id="u6746" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u6736popup" data-lightbox="true">
+        <div class="ContainerGroup rgba-background clearfix" id="u6736" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- stack box -->
+         <div class="Container clearfix grpelem" id="u6741" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+          <div class="clearfix grpelem" id="u6795-4"><!-- content -->
+           <p>Wählen Sie bitte Interessierte Menü!</p>
+          </div>
+          <div class="museBGSize clearfix grpelem" id="u10238"><!-- group -->
+           <a class="nonblock nontext rgba-background rounded-corners grpelem" id="u9649" href="sprache.html"><!-- simple frame --></a>
+           <a class="nonblock nontext rgba-background rounded-corners grpelem" id="u10229" href="datum.html"><!-- simple frame --></a>
+           <a class="nonblock nontext rgba-background rounded-corners grpelem" id="u10249" href="wlan.html"><!-- simple frame --></a>
+           <a class="nonblock nontext rgba-background rounded-corners grpelem" id="u10252" href="bedienusganleitung.html"><!-- simple frame --></a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="popup_anchor" id="u6747popup">
+        <div class="PamphletCloseButton PamphletLightboxPart popup_element rounded-corners" id="u6747" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+       </div>
+      </div>
+     </div>
+     <div class="grpelem" id="u382"><!-- simple frame --></div>
+     <div class="grpelem" id="u385"><!-- simple frame --></div>
+     <div class="grpelem" id="u6801"><!-- rasterized frame --></div>
+     <div class="clearfix grpelem" id="u6798-6" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+      <p id="u6798-2">HAUPT EINSTELLUNGEN FÜR UNSERE ANDROID MODELLE</p>
+      <p id="u6798-4">WAHLEN SIE BITTE IHRE MENÜTYP</p>
+     </div>
+     <div class="grpelem" id="u10255" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- simple frame --></div>
+     <div class="grpelem" id="u10278" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- simple frame --></div>
+     <div class="grpelem" id="u10275" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=-1,M12=0,M21=0,M22=-1,SizingMethod='auto expand')" data-mu-ie-matrix-dx="0" data-mu-ie-matrix-dy="0"><!-- simple frame --></div>
+    </div>
+    <div class="colelem" id="u1091"><!-- rasterized frame --></div>
+    <div class="clearfix colelem" id="pu7244"><!-- group -->
+     <div class="size_fixed grpelem" id="u7244" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- custom html -->
+      
+<div id="box1" style="height:292px;width:949px;  background:#FFFFFF;">
+</div>
+		
+     </div>
+     <div class="clearfix grpelem" id="u1102-4" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Über Carmediashop</p>
+     </div>
+     <div class="clearfix grpelem" id="u1105-13" data-sizePolicy="fixed" data-pintopage="page_fluidx"><!-- content -->
+      <p>Carmediashop bietet eine riesige Auswahl an Autoradios, mobiler Unterhaltungselektronik und Produkten rund um CarHiFi.</p>
+      <p>&nbsp;</p>
+      <p>Im Produktkatalog von Carmediashop ist für jeden Geschmack und für jedes Budget das richtige Autoradio bestimmt dabei. Vom einfachen echtes Autoradio ohne CD-Laufwerk bis zum voll ausgestatteten All-In-One Autoradio mit Navigationssystem.</p>
+      <p>&nbsp;</p>
+      <p>Hier können Sie einfach, günstig und schnell Ihr neues Autoradio kaufen. Viele unserer Multimedia Autoradios sind um eine Rückfahrkamera oder um einen DVB-T Fernsehempfänger erweiterbar. Natürlich können Sie dieses Zubehör für Ihr Autoradio bei uns günstig online kaufen.</p>
+      <p>&nbsp;</p>
+      <p>Auch die Lautsprecher, den Subwoofer und das passende Zubehör bekommen Sie hier aus einer Hand.</p>
+     </div>
+     <div class="grpelem" id="u1541"><!-- rasterized frame --></div>
+     <div class="size_fluid_width_height grpelem" id="u7239" data-pintopage="page_fluidx" data-sizePolicy="fluidWidthHeight"><!-- custom html -->
+      <div class="fluid_height_spacer"></div>
+      
+    <iframe class="actAsDiv" style="width:100%;height:100%;" src="//player.vimeo.com/video/202170908?title=0&amp;byline=0&amp;portrait=0&amp;color=FFFF00&amp;autoplay=0&amp;loop=0&amp;wmode=transparent" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+     </div>
+     <div class="museBGSize grpelem" id="u2641"><!-- simple frame --></div>
+     <div class="PamphletWidget clearfix grpelem" id="pamphletu1636" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <div class="ThumbGroup clearfix grpelem" id="u1637" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+       <div class="popup_anchor" id="u1638popup">
+        <div class="Thumb popup_element" id="u1638" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+       </div>
+       <div class="popup_anchor" id="u1639popup">
+        <div class="Thumb popup_element" id="u1639" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+       </div>
+      </div>
+      <div class="popup_anchor" id="u1641popup">
+       <div class="ContainerGroup clearfix" id="u1641" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- stack box -->
+        <div class="Container clearfix grpelem" id="u1642" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="clip_frame grpelem" id="u1643" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1643_img" src="images/cnn.png?crc=418996909" alt="" width="113" height="53"/>
+         </div>
+         <div class="clip_frame grpelem" id="u1645" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1645_img" src="images/casio.png?crc=359432307" alt="" width="174" height="31"/>
+         </div>
+         <div class="clip_frame grpelem" id="u1649" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1649_img" src="images/fuji.png?crc=4087081730" alt="" width="197" height="33"/>
+         </div>
+         <div class="clip_frame grpelem" id="u1769" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1769_img" src="images/adv.png?crc=184739793" alt="" width="119" height="34"/>
+         </div>
+        </div>
+        <div class="Container invi clearfix grpelem" id="u1651" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- group -->
+         <div class="clip_frame grpelem" id="u1652" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1652_img" src="images/cnn.png?crc=418996909" alt="" width="113" height="53"/>
+         </div>
+         <div class="clip_frame grpelem" id="u1654" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1654_img" src="images/casio.png?crc=359432307" alt="" width="174" height="31"/>
+         </div>
+         <div class="clip_frame grpelem" id="u1656" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="block" id="u1656_img" src="images/fuji.png?crc=4087081730" alt="" width="197" height="33"/>
+         </div>
+         <div class="clip_frame clearfix grpelem" id="u1777" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+          <img class="position_content" id="u1777_img" src="images/adv.png?crc=184739793" alt="" width="116" height="34"/>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="popup_anchor" id="u1640popup">
+       <div class="PamphletPrevButton PamphletLightboxPart popup_element" id="u1640" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+      </div>
+      <div class="popup_anchor" id="u1660popup">
+       <div class="PamphletNextButton PamphletLightboxPart popup_element" id="u1660" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+      </div>
+     </div>
+     <div class="PamphletWidget clearfix grpelem" id="pamphletu2578" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <div class="popup_anchor" id="u2583popup">
+       <div class="ContainerGroup clearfix" id="u2583" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- stack box -->
+        <div class="Container clearfix grpelem" id="u2587" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- column -->
+         <div class="clearfix colelem" id="u2589-6" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>Android Autoradio BMW. 23. Januar 2017 Alles ohne Probleme!.</p>
+          <p>Ein super teil echt für den preis super</p>
+         </div>
+         <div class="clearfix colelem" id="u2588-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>Review von Maik M.</p>
+         </div>
+        </div>
+        <div class="Container invi museBGSize clearfix grpelem" id="u2584" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- column -->
+         <div class="clearfix colelem" id="u2585-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>&nbsp;BMW-E46 Autoradio. 11. Januar 2017 Schnelle Lieferung,sichere Verpackung. Gutes Geschäft und eines der wenigen Geschäfte das noch per Nachnahme verschickt.Top!!!</p>
+         </div>
+         <div class="clearfix colelem" id="u2586-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+          <p>Review von Karl</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="ThumbGroup clearfix grpelem" id="u2592" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+       <div class="popup_anchor" id="u2594popup">
+        <div class="Thumb popup_element rounded-corners" id="u2594" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+       </div>
+       <div class="popup_anchor" id="u2593popup">
+        <div class="Thumb popup_element rounded-corners" id="u2593" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="shadow clearfix colelem" id="u2406"><!-- group -->
+     <div class="H1 clearfix grpelem" id="u2407-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+      <h1>Kontakt</h1>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="u2408-6" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+     <p>SIE FRAGEN - WIR ANTWORTEN.</p>
+     <p>HIER HABEN SIE DIE MÖGLICHKEIT, UNS FRAGEN PER EMAIL ZUKOMMEN ZU LASSEN.</p>
+    </div>
+    <form class="form-grp clearfix colelem" id="widgetu2409" method="post" enctype="multipart/form-data" action="scripts/form-u2409.php" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+     <div class="fld-grp clearfix grpelem" id="widgetu2414" data-required="true" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u2417-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu2414_input" name="custom_U2414" tabindex="1" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu2414_prompt" for="widgetu2414_input"><span class="actAsPara">Ihre Name</span></label></span>
+     </div>
+     <div class="fld-grp clearfix grpelem" id="widgetu2425" data-required="true" data-type="email" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u2428-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><input class="wrapped-input" type="email" spellcheck="false" id="widgetu2425_input" name="Email" tabindex="3" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu2425_prompt" for="widgetu2425_input"><span class="actAsPara">Ihre Email*</span></label></span>
+     </div>
+     <div class="clearfix grpelem" id="u2429-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+      <p>Submitting Form...</p>
+     </div>
+     <div class="clearfix grpelem" id="u2424-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+      <p>please fill out the form field correctly before submission! please try again.</p>
+     </div>
+     <div class="clearfix grpelem" id="u2423-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+      <p>Erfolg! Vielen Dank für Ihre NACHRICHT.</p>
+     </div>
+     <button class="submit-btn NoWrap clearfix grpelem" id="u2422-5" type="submit" value="&nbsp;" tabindex="5" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content -->
+      <div style="margin-top:-34px;height:34px;">
+       <p>&nbsp;</p>
+       <p>Vorlegen</p>
+      </div>
+     </button>
+     <div class="fld-grp clearfix grpelem" id="widgetu2418" data-required="false" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <span class="fld-textarea actAsDiv clearfix grpelem" id="u2421-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><textarea class="wrapped-input" id="widgetu2418_input" name="custom_U2418" tabindex="2" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></textarea><label class="wrapped-input fld-prompt" id="widgetu2418_prompt" for="widgetu2418_input"><span class="actAsPara">Fügen Sie eine kurze Nachricht ...</span></label></span>
+     </div>
+     <div class="fld-grp clearfix grpelem" id="widgetu2410" data-required="true" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- none box -->
+      <span class="fld-input NoWrap actAsDiv clearfix grpelem" id="u2412-4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- content --><input class="wrapped-input" type="text" id="widgetu2410_input" name="custom_U2410" tabindex="4" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"/><label class="wrapped-input fld-prompt" id="widgetu2410_prompt" for="widgetu2410_input"><span class="actAsPara">Betreff eingeben</span></label></span>
+     </div>
+    </form>
+   </div>
+   <div class="grpelem" id="u976"><!-- simple frame --></div>
+   <div class="verticalspacer" data-offset-top="2053" data-content-above-spacer="2073" data-content-below-spacer="18" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+   <div class="clearfix grpelem" id="pu2405-33"><!-- group -->
+    <div class="browser_width grpelem" id="u2405-33-bw">
+     <div class="clearfix" id="u2405-33"><!-- content -->
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p id="u2405-31"><span id="u2405-30">&nbsp;&nbsp;&nbsp;&nbsp; © Copyright 2017 INDIGOMEDIA. Alle Rechte vorbehalten. | Päwesiner Weg 20 | 13581 Berlin | Deutschland | Tel: +49 (0) 176 22 99 77 56 | Fax: +49 (0) 30 75 65 02 55</span></p>
+     </div>
+    </div>
+    <a class="nonblock nontext shadow grpelem" id="u2653" href="http://www.facebook.com/" target="_blank" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></a>
+   </div>
+   <a class="nonblock nontext shadow grpelem" id="u2655" href="https://ru.linkedin.com/" target="_blank" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></a>
+   <a class="nonblock nontext shadow grpelem" id="u2652" href="http://twitter.com/" target="_blank" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></a>
+   <a class="nonblock nontext shadow grpelem" id="u2657" href="http://www.pinterest.com/" target="_blank" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></a>
+   <div class="shadow grpelem" id="u2656" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></div>
+   <a class="nonblock nontext shadow grpelem" id="u2654" href="https://www.youtube.com/watch?v=QGZe5i3p_gE" target="_blank" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- simple frame --></a>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="images/kaufen%20buton%20260-u7229-r.png?crc=1992324" alt=""/>
+   <img class="preload" src="images/kaufen%20buton%20290-u7301-r.png?crc=4063872804" alt=""/>
+   <img class="preload" src="images/kaufen%20buton%20260-u7312-r.png?crc=1992324" alt=""/>
+   <img class="preload" src="images/kaufen%20buton%20260-u7365-r.png?crc=1992324" alt=""/>
+   <img class="preload" src="images/taste_schlie%c3%9fen_aktiv.png?crc=3798742081" alt=""/>
+  </div>
+  <!-- JS includes -->
+  <script type="text/javascript">
+   if (document.location.protocol != 'https:') document.write('\x3Cscript src="http://musecdn.businesscatalyst.com/scripts/4.0/jquery-1.8.3.min.js" type="text/javascript">\x3C/script>');
+</script>
+  <script type="text/javascript">
+   window.jQuery || document.write('\x3Cscript src="scripts/jquery-1.8.3.min.js?crc=209076791" type="text/javascript">\x3C/script>');
+</script>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch","jquery.musepolyfill.bgsize","webpro","musewpslideshow","jquery.museoverlay","touchswipe"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('#pamphletu7076', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'loose',event:'click',deactivationEvent:'none',autoPlay:true,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,triggersOnTop:true,shuffle:true,enableSwipe:true,resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); });/* #pamphletu7076 */
+Muse.Utils.initWidget('#pamphletu6731', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'lightbox',event:'click',deactivationEvent:'none',autoPlay:false,displayInterval:3000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,triggersOnTop:false,shuffle:false,enableSwipe:true,resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); });/* #pamphletu6731 */
+Muse.Utils.initWidget('#pamphletu1636', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'',autoPlay:false,displayInterval:3000,transitionStyle:'horizontal',transitionDuration:2000,hideAllContentsFirst:false,triggersOnTop:false,shuffle:false,enableSwipe:false,resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); });/* #pamphletu1636 */
+Muse.Utils.initWidget('#pamphletu2578', ['#bp_infinity'], function(elem) { return new WebPro.Widget.ContentSlideShow(elem, {contentLayout_runtime:'stack',event:'click',deactivationEvent:'none',autoPlay:true,displayInterval:5000,transitionStyle:'fading',transitionDuration:500,hideAllContentsFirst:false,triggersOnTop:true,shuffle:true,enableSwipe:true,resumeAutoplay:false,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); });/* #pamphletu2578 */
+Muse.Utils.initWidget('#widgetu2409', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu2409 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=4286661555" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+  
+  <!--HTML Widget code-->
+  <bodyEndHTML>
+  <script>(function( $ ){
+
+	$.fn.shadow = function(options) {  
+	
+		// options could just be the type
+		if (typeof options !== "object")
+			options = {type:options};
+		
+		// set up the options using the defaults
+		options = $.extend({}, $.fn.shadow.defaults, options);
+		
+		var els = this;
+		
+		// add the necessary css classes
+		els.addClass('jquery-shadow');
+		els.addClass('jquery-shadow-'+options.type);	
+	 
+		// some require extras js      
+		switch(options.type) {
+			case 'sides' :
+				$.fn.shadow.sides(this,options);
+				break;
+			case 'rotated' :
+				$.fn.shadow.rotated(this,options);
+				break;		
+		}
+		
+		// for good measure :)
+		$.fn.shadow.borderRadius(this,options.radius);		
+						
+		return this;
+	};
+	
+	// rotation
+	$.fn.shadow.rotated = function(els,options) {
+	
+		// one property to rule them all, if only!
+		els.css('-webkit-transform','rotate('+options.rotate+')')
+			.css('-moz-transform','rotate('+options.rotate+')')
+			.css('-ms-transform','rotate('+options.rotate+')')
+			.css('-o-transform','rotate('+options.rotate+')')
+			.css('transform','rotate('+options.rotate+')');
+	}
+	
+	// sides	
+	$.fn.shadow.sides = function(els,options) {
+		els.addClass('jquery-shadow-sides-'+options.sides);
+	}
+	
+	// border-radius
+	$.fn.shadow.borderRadius = function(els,radius) {
+		els.css('-moz-border-radius',radius)
+			.css('border-radius',radius);
+	}
+
+	// default
+	$.fn.shadow.defaults = {
+		type:'lifted', // AVAILABLE standard, lifted, perspective, raised, sides
+		radius:0,
+		sides:'vt-2', // used when type = "sides", AVAILABLE vt-1, vt-2, hz-1, hz-2
+		rotate:'-3deg'
+	};
+		 	
+})( jQuery );</script>
+  <script>$('#box1').shadow('{param_shadowtype}'); 
+$('#box1').shadow({
+});</script>
+</bodyEndHTML>
+   </body>
+</html>
