@@ -17,7 +17,7 @@ const Header = () => {
                 <div className={styles.user}>
                     <div className={styles.avatar} style={{backgroundImage: `url(${AVATAR})`}}
                     />
-                    <div className={styles.username}>John Doe</div>
+                    <div className={styles.username}>Dan Kur</div>
                 </div>
                 <form className={styles.form}>
                     <div className={styles.icon}>

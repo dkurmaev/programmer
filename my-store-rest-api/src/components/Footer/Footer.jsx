@@ -13,7 +13,7 @@ const Footer = () => {
                 </Link>
             </div>
             <div className={styles.rights}>
-                © 2023 Space Burger.{""}
+                © 2023 Danil Kurmayev.{""}
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                 <a
                     href="#"
