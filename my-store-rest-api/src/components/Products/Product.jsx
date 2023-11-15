@@ -4,7 +4,7 @@ import {useDispatch} from "react-redux";
 
 import styles from "../../styles/Product.module.css";
 import {ROUTES} from "../../utils/routes";
-import {addItemToCart} from "../../features/user/userSlice";
+import {addItemToCart, addItemToFavorites} from "../../features/user/userSlice";
 
 
 const SIZES = ['XS', 'S', 'M', 'L', 'XL'];
@@ -24,6 +24,10 @@ const Product = (item) => {
 
     const addToCart = () => {
         dispatch(addItemToCart(item))
+    }
+
+    const addFavorites = () => {
+        dispatch(addItemToFavorites(item))
     }
 
     return (
@@ -68,7 +72,7 @@ const Product = (item) => {
 
                 <div className={styles.actions}>
                     <button onClick={addToCart} className={styles.add} disabled={!currentSize}>Add to cart</button>  {/* if currentSize is empty, button is disabled */}
-                    <button className={styles.favourite}>Add to favourite</button>
+                    <button onClick={addFavorites} className={styles.favourite}>Add to favourite</button>
                 </div>
                 <div className={styles.bottom}>
                     <div className={styles.purchase}>19 people purchased</div>
